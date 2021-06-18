@@ -1,0 +1,86 @@
+Verordnungsname	Krzel	Ver”ffentlichung	Inkrafttretung	Auáerkrafttretung	NRW Ministerium	wo gltig	nicht gestattete Aktivit„t	verpflichtende Aktivit„t	fr wen gltig	Ausnahmen	Schlagwort(e)
+											
+Coronaschutzverordnung	CoronaSchVO	30.03.2020	31.03.2020	19.04.2020	Arbeit, Gesundheit und Soziales	Gemeinschaftseinrichtungen	Vortr„ge		Reiserckkehrer aus Risikogebieten	Training an den nordrhein-westf„lischen Bundessttzpunkten 	Schutzmaánahmen
+						Krankenh„user	Lesungen		Bev”lkerung	Einzelhandel fr Lebensmittel	Gew„hrleistung des Mindestabstands von 1,5 Metern 
+						Vorsorge- und Rehabilitationseinrichungen	Informationsveranstaltungen			Direktvermarktung von landwirtschaftlichen Betrieben	kontaktarm
+						Dialyseeinrichtungen	Sportbetrieb			Abhol- und Lieferdienste	Auáer-Haus-Verkauf
+						Tageseinrichtungen	Zusammenknfte in Vereinen			Getr„nkem„rkte	Betretungsverbot
+						station„re Einrichtungen der Pflege und der Eingliederungshilfe	Veranstaltungen			Apotheken	pers”nliche Schutzausrstung
+						besondere Wohnformen im Sinne des SGB XII sowie „hnliche Einrichtungen	Versammlungen			Sanit„tsh„user	kontaktfrei
+						Berufsschulen	Zusammenknfte und Ansammlungen von mehr als 2 Personen 			Drogerien	Vermeidung von Warteschlaangen
+						Hochschulen				Tankstellen	zehn Quadratmeter der fr Kunden zug„nglichen Ladenfl„che
+						Bars				Banken	im Umkreis von 50 Metern um eine gastronomische Einrichtung
+						Clubs				Sparkassen	Steuerung des Zutritts
+						Diskotheken				Poststellen	Besuchsverbot
+						Theater				Reinigungen	Zutrittssteuerung
+						Opernh„user				Waschsalons	Zugangsbeschr„nkungen
+						Konzerth„user				Kioske	Schutzvorkehrungen
+						Kinos				Zeitungsverkaufsstellen	Sicherstellung der Kontaktfreiheit
+						Museen				Tierbedarfsm„rkte	Vorkehrungen zur Hygiene
+						Messen				Einrichtungen des Groáhandels	
+						Ausstellungen				Wochenm„rkte (Lebensmittel)	
+						Freizeit- und Tierparks				Bau- und Gartenbaum„rkte zur Versorgung von Handwerkern und Gewerbetreibenden	
+						Spezialm„rkte	Angebote von Freizeitaktivit„ten drinnen und drauáen			Floristen	
+						Fitness-Studios				Versandhandel	
+						Sonnenstudios				kontaktfreie Abholung bestellter Waren	
+						Schwimmb„der				gesundheitsorientierte Handwerksleistungen: Augenoptiker	
+						Spaáb„der				H”rger„teakustiker	
+						Saunen				orthop„dische Schuhmacher	
+						Spielhallen				therapeutische Berufsausbung von Physio- und Ergotherapeuten auf Attest, Verordnung, Reezept	
+						Spielbanken				gewerbsm„áige Personenbef”rderung	
+						Wettbros				Heilberufe mit Approbation	
+						Prostitutionsst„tten				ambulante Pflege	
+						Bordelle				Belieferung und Auáer-Haus-Verkauf mit Speisen und Getr„nken	
+						”ffentliche und private Sportanlagen				Zusammenknfte mit Verwandten in gerade Linie	
+						Friseure				Zusammenknfte mit Ehegatten, Lebenspartnern sowie in h„uslicher Gemeinschaft lebende Personen	
+						Nagelstudios				Begleitung minderj„hriger und unterssttzungsbedrftiger Personen	
+						T„towierer				zwingend notwendige Zusammenknfte aus gesch„ftlichen, beruflichen und dienstlichen ssowie aus prfungs- und betreuungsrelevanten Grnden	
+						Massagesalons				Nutzung des ”ffentlichen Personennahverkehrs	
+						Restaurants					
+						Gastst„tten					
+						Imbissse					
+						Mensen					
+						Kantinen					
+						Kneipen					
+						(Eis-)Caf‚s					
+						Picknicken und Grillen auf ”ffentlichen Pl„tzen					
+											
+Coronabetreuungsverordnung	CoronaBetrVO02.04.2020		03.04.2020	19.04.2020	Arbeit, Gesundheit und Soziales	Schulen	Schulbesuch		 Schler der Klassen 7-13	Schler der Klassen 1-6	Vor-Ort-Betreuung
+						Ersatzschulen				Vor-Ort-Betreuung wegen Kindeswohlgef„hrdung	Notbetreuung
+						Erg„nzungsschulen				Nutzerinnen und Nutzer, deren pflegerische oder soziale Betreuung fr den Zeitraum, in dem sie sich normalerweise in der Werkstatt fr behinderte Menschen (WfbM) aufhalten, nicht sichergestellt ist	SchulMails
+						Kindertageseinrichtungen				Rehabilitandinnen und Rehabilitanden, die einen intensiven und pers”nlichen Betreuungsaufwand ben”tigen, dem im h„uslichen Rahmen nicht entsprochen werden kann	Empfehlungen des Robert-Koch-Instituts
+						Kindertagespflegestellen				Nutzerinnen und Nutzer von Tages- und Nachtpflegeeinrichtungen im Sinne des Elften Buches Sozialgesetzbuch , deren h„usliche Versorgung bei Wegfall der teilstation„ren Pflege und Betreuung glaubhaft gef„hrdet w„re	Home-Office
+						Tages- und Nachtpflegeeinrichungen				Sektor Energie	vulnerable Bev”lkerungsgruppe
+						Tagesstrukturierende Einrichtungen				Sektor Ern„hrung, Hygiene	Schutzmaánahmen
+						Einrichtungen der beruflichen Rehabilitation				Sektor Informationstechnik und Telekommunikation	kontaktreduzierende Maánahmen
+						Berufsbildungswerke				Sektor Gesundheit	virtuelle Lernwelten
+						Berufsf”rderungswerke				veterin„rmedizinische Notfallversorgung	Kritische Infrastrukturen (KRITIS)
+						berufliche Trainingszentren				Sektor Finanz- und Wirtschaftswesen	Versorgungsengp„sse
+						interdisziplin„re oder heilp„dagogische Frhf”rderstellen				Sektor Transport und Verkehr	
+						heilp„dagogische Praxen				Sektor Medien	
+						Autismuszentren				Sektor staatliche Verwaltung (Bund, Land, Kommune)	
+										Asyl- und Flchtlingswesen einschlieálich Abschiebungshaft, Verfassungsschutz, aufsichtliche Aufgaben, Finanzverwaltung sowie Hochschulen und sonstige wissenschaftlichen Einrichtungen, soweit sie fr den Betrieb von sicherheitsrelevanten Einrichtungen oder unverzichtbaren Aufgaben zust„ndig sind,	
+										Sicherstellung notwendiger Betreuung in Schulen, Kindertageseinrichtungen, Kindertagespflege, station„ren Einrichtungen der Kinder- und Jugendhilfe und Einrichtungen fr Menschen mit Behinderung,	
+										notwendige Hilfe- und Schutzangebote der Kinder- und Jugendhilfe sowie Hilfe- und Schutzangebote fr weitere schutzbedrftige Personen	
+											
+Verordnung	CoronaAufnahmeVO	03.04.2020	03.04.2020								epidemische Lage nationaler Tragweite
+zur Regelung von Neu- und Wiederaufnahmen in											Aufnahmekapazit„t
+vollstation„ren Dauer- und Kurzzeitpflegeeinrichtungen sowie											Anzeichen fr einen Atemwegsinfekt
+besonderen Wohnformen fr Menschen mit Behinderungen											priorit„re Analyse der Probe
+einschlieálich Kurzzeitwohneinrichtungen der Eingliederungshilfe											Isolations- und Quarant„nebereiche
+zur Verhinderung der weiteren Ausbreitung von SARS-CoV-2											Kohortenisolierung in Zimmern erfolgen
+											
+Verordnung zur Gew„hrleistung	Ausbildungsgew„hrleistungsverordnung Feuerwehr - AusGVO-Feu	31.03.2020	01.04.2020	30.04.2020	Ministerium des Innern im Einvernehmen mit dem Ministerium der Finanzen				Beamtinnen und Beamten des feuerwehrtechnischen Dienstes im Land Nordrhein-Westfalen		e-Learning-Angebote
+der Ausbildungen im feuerwehrtechnischen Dienst 									fr die Ausbildungsjahrg„nge, die im Zeitraum vom 1. April 2018 bis 1. April 2020 in den Vorbereitungsdienst oder in die Ausbildung eingestellt wurden oder werden		Videokonferenzen
+											
+Verordnung zum Schutz	CoronaEinreiseVO	09.04.2020	10.04.2020	19.04.2020	fr Arbeit, Gesundheit und Soziales		Besuch von Personen zu empfangen, die nicht dem Hausstand des Aufenthaltsorts angeh”ren	"verpflichtet, sich unverzglich nach der Einreise auf direktem Weg in die eigene H„uslichkeit oder eine andere geeignete Unterkunft zu begeben und diesen Aufenthaltsort fr einen Zeitraum von 14 Tagen nach ihrer Einreise in die Bundesrepublik Deutschland nicht zu verlassen; dies gilt auch fr Personen, die zun„chst in ein anderes Land der Bundesrepublik Deutschland eingereist sind"	Personen, die auf dem Land-, See-, oder Luftweg aus einem Staat auáerhalb der Bundesrepublik Deutschland in das Land Nordrhein-Westfalen einreisen und sich zuvor mehr als 72 Stunden im Ausland aufgehalten haben		triftiger Reisegrund
+vor Neuinfizierungen mit dem Coronavirus SARS-CoV-2								unverzglich das fr sie zust„ndige Gesundheitsamt zu kontaktieren und auf das Vorliegen der Verpflichtungen nach Absatz 1 hinzuweisen. Sie haben dem Gesundheitsamt Auskunft ber ihren Gesundheitszustand zu geben und sind verpflichtet, das Gesundheitsamt beim Auftreten von Krankheitssymptomen unverzglich zu kontaktieren		Personen,  Personen, die beruflich bedingt grenzberschreitend Personen, Waren oder Gter auf der Straáe, der Schiene, per Schiff oder per Flugzeug transportieren	nicht unter gleichem Dach wohnender Lebenspartner
+in Bezug auf Ein- und Rckreisende										deren T„tigkeit fr die Aufrechterhaltung a) ÿder Funktionsf„higkeit des Gesundheitswesens, b) ÿder ”ffentlichen Sicherheit und Ordnung, c) ÿder Pflege diplomatischer und internationaler Beziehungen, d) ÿder Funktionsf„higkeit des Rechtswesens, e) ÿder Funktionsf„higkeit von Volksvertretung, Regierung und Verwaltung des Bundes, der L„nder oder der Kommunen, f)ÿ der Funktionsf„higkeit der Organe der Europ„ischen Union oder internationaler Organisationen 	betriebliche Hygienemaánahmen
+										Mitarbeiter und Mitarbeiterinnen von Luft-, Schiffs-, Bahn-, oder Busverkehrsunternehmen oder als Besatzung von Flugzeugen, Schiffen, Bahnen und Bussen	Vorkehrungen zur Kontaktvermeidung
+										Personen, die t„glich oder fr bis zu 5 Tage durch ihren Beruf oder ihre Ausbildung veranlasst in das Bundesgebiet einreisen oder nach entsprechendem Aufenthalt im Ausland in das Bundesgebiet zurckkehren	COVID-19
+										Personen, die einen sonstigen triftigen Reisegrund haben	
+										dringende medizinische Behandlungen	
+										Beistand oder Pflege schutzbedrftiger Personen	
+										Betreuung von Kindern	
+										Beerdigungen und Ein„scherungen	
+										Teilnahme an zivilen oder religi”sen Hochzeiten	
