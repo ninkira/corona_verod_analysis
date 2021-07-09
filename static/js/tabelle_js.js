@@ -135,7 +135,7 @@
         }
 
         var cconfig = {
-            // @Valeria; TO-DO: Anpassung an die Werte von Max
+            
             type: 'bar',
             data: {
                 labels: xlabels,

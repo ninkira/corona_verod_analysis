@@ -4,9 +4,9 @@
     <title>Sprache der Coronaverordnung</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -16,179 +16,188 @@
     <!-- Custom Scripts-->
 
     <script type="text/javascript" src="js/tabelle_js.js"></script>
+    <script type="text/javascript" src="js/linechart_js.js"></script>
     <!-- CSS only -->
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-        <link href="css/proj.css" rel="stylesheet">
-    </head>
+    <link href="css/proj.css" rel="stylesheet">
+</head>
 
 <body>
 
 
 
 
-      
+
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
-      </nav>
-      
-      <div class="container-fluid">
-        <div class="row">
-          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                  <li class="nav-item">
+    </nav>
 
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mt-4 mb-2 text-muted">
-                <span>Waehlen Sie drei Begriffe</span>
-              </h6>
-                <select class="form-select px-3 mt-4 mb-1">
-                    <option selected>Begriff 1</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <select class="form-select px-3 mt-4 mb-1">
-                  <option selected>Begriff 2</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select class="form-select px-3 mt-4 mb-1">
-                  <option selected>Begriff 3</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <button id=button class ="px-3 mt-4 mb-1">Grafik anzeigen</button>
-                </li>
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <h6
+                                class="sidebar-heading d-flex justify-content-between align-items-center px-2 mt-4 mb-2 text-muted">
+                                <span>Waehlen Sie zwei Begriffe</span>
+                            </h6>
+
+                             <span>Google Trends Begriffe </span>
+                            <select class="form-select px-3 mt-4 mb-1">
+                                <option selected>Begriff 1</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span>Verordnungen</span>
+                            <select class="form-select px-3 mt-4 mb-1">
+                                <option selected>Begriff 2</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select px-3 mt-4 mb-1">
+                                <option selected>Begriff 3</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
+                            <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
+                      
+                       
+                        </li>
+                    </ul>
                 </div>
-        </nav>
+            </nav>
         </div>
-        </div>
-  
-   
+    </div>
+
+
+
     <div id="btn_test"></div>
     <div class="main">
-   <!--
+        <!--
         <button onclick="tabelle_js.get_data()">Test</button>
     <br>
     
    -->
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-   
-    <canvas id=canvas></canvas>
-   
-     
-
-    <script>
-
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+      <div>
+        <canvas id="test-line-chart" width="800" height="450"></canvas>
+      </div>
+      
+    
 
 
-$(document).on("click", "#button", function(evt) {
-           tabelle_js.get_data();
-        });
+        <script>
+            $(document).on("click", "#button", function (evt) {
+                tabelle_js.get_data();
+            });
+         
+            $(document).on("click", "#linechart_button", function (evt) {
+                linechart_js.get_data();
+            });
 
 
 
-
-        /*
-        
-                // Mixed Chart für später 
-                var chartDefault = {
-                    // @Valeria; TO-DO: Anpassung an die Werte von Max
-                    type: 'bar',
-                    data: {
-                        labels: ['Infektionsschutzgesetz', 'Steuerung des Zutritts', 'Mindestabstand', 'Schutzvorkehrungen', 'Hygienekonzept', 'Außer Hausverkauf'],
-                        datasets: [{
-                            type: 'bar',
-                            label: 'Receivable',
-                            data: [730, 492.5, 120, 4732.5, 2760.85, 0],
-                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1
-                        }, {
-                            type: 'bar',
-                            label: 'Past Due',
-                            data: [2760.85, 0, 0, 0, 0, 0],
-                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                            borderColor: 'rgba(255,99,132,1)',
-                            borderWidth: 1
-                        }, {
-                            type: 'scatter',
-                            label: 'Google Trends',
-                            data: [{ "x": 106, "y": 177.7 }, { "x": 101, "y": 1 }, { "x": 92, "y": 1 }, { "x": 88, "y": 120 }, { "x": 65, "y": 4 }, { "x": 66, "y": 120 }, { "x": 59, "y": 120 }, { "x": 36, "y": 372.5 }, { "x": 35, "y": 120 }, { "x": 29, "y": 120 }, { "x": 4, "y": 185 }, { "x": 4, "y": 120 }, { "x": 1, "y": 240 }, { "x": 1, "y": 65 }],
-                            xAxisID: 'invoice-time',
-                            yAxisID: 'invoice-amount',
-                            backgroundColor: 'rgba(75, 00, 150, 0.2)',
-                            borderColor: 'rgba(75, 00, 150,1)',
-                            borderWidth: 2
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            xAxes: [{
-                                display: true,
-                                stacked: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Coronaschutzverordnung (NRW)'
-                                },
+            /*
+            
+                    // Mixed Chart für später 
+                    var chartDefault = {
+                        // @Valeria; TO-DO: Anpassung an die Werte von Max
+                        type: 'bar',
+                        data: {
+                            labels: ['Infektionsschutzgesetz', 'Steuerung des Zutritts', 'Mindestabstand', 'Schutzvorkehrungen', 'Hygienekonzept', 'Außer Hausverkauf'],
+                            datasets: [{
+                                type: 'bar',
+                                label: 'Receivable',
+                                data: [730, 492.5, 120, 4732.5, 2760.85, 0],
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
                             }, {
-                                id: 'invoice-time',
-                                type: 'linear',
-                                display: false,
-                                stacked: false,
-                                scaleLabel: {
-                                    display: false,
-                                    labelString: 'Coronaschutzverordnung (NRW)'
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                    stepSize: 1,
-                                    suggestedMax: 125
-                                }
-                            }],
-                            yAxes: [{
-                                display: true,
-                                stacked: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Häufigkeit des Begriffs'
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                }
+                                type: 'bar',
+                                label: 'Past Due',
+                                data: [2760.85, 0, 0, 0, 0, 0],
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgba(255,99,132,1)',
+                                borderWidth: 1
                             }, {
-                                id: 'invoice-amount',
-                                display: false,
-                                stacked: false,
-                                scaleLabel: {
-                                    display: false,
-                                    labelString: 'Häufigkeit des Begriffs'
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                }
+                                type: 'scatter',
+                                label: 'Google Trends',
+                                data: [{ "x": 106, "y": 177.7 }, { "x": 101, "y": 1 }, { "x": 92, "y": 1 }, { "x": 88, "y": 120 }, { "x": 65, "y": 4 }, { "x": 66, "y": 120 }, { "x": 59, "y": 120 }, { "x": 36, "y": 372.5 }, { "x": 35, "y": 120 }, { "x": 29, "y": 120 }, { "x": 4, "y": 185 }, { "x": 4, "y": 120 }, { "x": 1, "y": 240 }, { "x": 1, "y": 65 }],
+                                xAxisID: 'invoice-time',
+                                yAxisID: 'invoice-amount',
+                                backgroundColor: 'rgba(75, 00, 150, 0.2)',
+                                borderColor: 'rgba(75, 00, 150,1)',
+                                borderWidth: 2
                             }]
                         },
-                    }
-                };
-                var chart = new Chart($('#myChart'), chartDefault);
-        
-        */
+                        options: {
+                            scales: {
+                                xAxes: [{
+                                    display: true,
+                                    stacked: true,
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Coronaschutzverordnung (NRW)'
+                                    },
+                                }, {
+                                    id: 'invoice-time',
+                                    type: 'linear',
+                                    display: false,
+                                    stacked: false,
+                                    scaleLabel: {
+                                        display: false,
+                                        labelString: 'Coronaschutzverordnung (NRW)'
+                                    },
+                                    ticks: {
+                                        beginAtZero: true,
+                                        stepSize: 1,
+                                        suggestedMax: 125
+                                    }
+                                }],
+                                yAxes: [{
+                                    display: true,
+                                    stacked: true,
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Häufigkeit des Begriffs'
+                                    },
+                                    ticks: {
+                                        beginAtZero: true,
+                                    }
+                                }, {
+                                    id: 'invoice-amount',
+                                    display: false,
+                                    stacked: false,
+                                    scaleLabel: {
+                                        display: false,
+                                        labelString: 'Häufigkeit des Begriffs'
+                                    },
+                                    ticks: {
+                                        beginAtZero: true,
+                                    }
+                                }]
+                            },
+                        }
+                    };
+                    var chart = new Chart($('#myChart'), chartDefault);
+            
+            */
 
 
 
 
-
-
-    </script>
+        </script>
     </div>
 </body>
 
