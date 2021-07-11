@@ -18,7 +18,8 @@ app.get("/csv", function (req, res) {
 
     var filename = path.join(__dirname, "static");
     filename = path.join(filename, "data");
-    filename = path.join(filename, "verordnung_dummy_0.csv");
+    // filename = path.join(filename, "verordnung_dummy_0.csv");
+    filename = path.join(filename, "alleverordnungen.csv");
     var counter = 0;
 
     var records = [];
@@ -48,7 +49,7 @@ app.get("/csv", function (req, res) {
             }
 
             records.push(data);
-      
+
             // console.log(JSON.stringify(keys, null, " "))
 
 
@@ -63,10 +64,76 @@ app.get("/csv", function (req, res) {
             })
 
             res.writeHead(200, {
+                "Content-Type": "application/text",
+                "Access-Control-Allow-Origin": "*"
+            });
+            res.end(smsg);
+            return;
+        });
+});
+
+app.get("/google_data", function (req, res) {
+    var filename = path.join(__dirname, "google_begriffe.json");
+    var google_records = [];
+
+    fs.readFile(filename, 'utf8', (err, jsonString) => {
+        if (err) {
+            console.log("Error reading file from disk:", err)
+            return
+        } try {
+            google_records = JSON.parse(jsonString)
+            console.log("Entire data set: ", google_records)
+            var smsg = JSON.stringify({
+                error: false,
+                message: "JSON wurde gelesen: " + google_records,
+                google_records: google_records
+            })
+
+            res.writeHead(200, {
+                "Content-Type": "application/text",
+                "Access-Control-Allow-Origin": "*"
+            });
+            res.end(smsg);
+            return;
+        } catch (err) {
+            console.log('Error parsing JSON string: ', err)
+        }
+    })
+/*
+    fs.createReadStream(filename, 'utf8', (err, jsonString))
+        .pipe(JSON.parse(jsonString))
+        .on("data", function (data) {
+
+            var that = this;
+            that.pause();
+            counter++;
+            // Verarbeitung der Daten
+            if (counter === 1) {
+                console.log("Keys: " + data);
+
+            }
+
+            google_records.push(data);
+
+            // console.log(JSON.stringify(keys, null, " "))
+
+
+
+            that.resume();
+        })
+        .on("end", function () {
+            var smsg = JSON.stringify({
+                error: false,
+                message: "CSV wurde gelesen: ",
+                google_records: google_records
+            })
+
+            res.writeHead(200, {
                 "Cotent-Type": "application/text",
                 "Access-Control-Allow-Origin": "*"
             });
             res.end(smsg);
             return;
         });
+*/
 });
