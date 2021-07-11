@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
@@ -31,7 +31,7 @@
 
 
 
-
+<!--
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
     </nav>
@@ -68,10 +68,7 @@
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
-                            <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
-                            <button id="termchart_button" class="px-3 mt-4 mb-1">TermChart anzeigen</button>
-
+                      
 
                         </li>
                     </ul>
@@ -79,7 +76,10 @@
             </nav>
         </div>
     </div>
-
+-->
+    <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
+    <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
+    <button id="termchart_button" class="px-3 mt-4 mb-1">TermChart anzeigen</button>
 
 
     <div id="btn_test"></div>
@@ -88,11 +88,11 @@
         <div>
             <canvas id="myChart"></canvas>
         </div>
-        <div>
-            <canvas id="test-line-chart" width="800" height="450"></canvas>
+        <div  style="position: relative; height:50vh; width:80vw">
+            <canvas id="test-line-chart" ></canvas>
         </div>
         <div>
-            <canvas id="test-term-chart" width="800" height="450"></canvas>
+            <canvas id="test-term-chart" width="200em"></canvas>
         </div>
 
 

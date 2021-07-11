@@ -135,7 +135,7 @@
         }
 
         var cconfig = {
-            
+
             type: 'bar',
             data: {
                 labels: xlabels,
@@ -182,12 +182,22 @@
 
 
                 scales: {
-                    xAxes: [{
-                        stacked: true
+                    x: [{
+                        stacked: true,
+
+                        ticks: {
+                            callback: function (val, index) {
+                                // Hide the label of every 2nd dataset
+                                return index % 2 === 0 ? this.getLabelForValue(val) : '';
+                            },
+                            color: 'red',
+
+                        }
                     }],
-                    yAxes: [{
+                    y: [{
                         beginAtZero: true,
-                        stacked: true
+                        stacked: true,
+                      
                     }]
                 }
             }

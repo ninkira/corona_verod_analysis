@@ -51,6 +51,7 @@
         var datasets = [];
 
         datasets[0] = {
+          
             label: "covid",
             data: [],
             borderColor: "#c45850",
@@ -58,54 +59,63 @@
         }
 
         datasets[1] = {
+          
             label: "Schnelltest",
             data: [],
             borderColor: "yellow",
             fill: false
         }
         datasets[2] = {
+           
             label: "Betreuung",
             data: [],
             borderColor: "#8e5ea2",
             fill: false
         }
         datasets[3] = {
+           
             label: "Behörde",
             data: [],
             borderColor: "#e8c3b9",
             fill: false
         }
         datasets[4] = {
+            
             label: "Einrichtung",
             data: [],
             borderColor: "blue",
             fill: false
         }
         datasets[5] = {
+         
             label: "Hygiene",
             data: [],
             borderColor: "grey",
             fill: false
         }
         datasets[6] = {
+         
             label: "Infektionsschutzgesetz",
             data: [],
             borderColor: "lightblue",
             fill: false
         }
         datasets[7] = {
+            
             label: "Personen",
             data: [],
             borderColor: "lightgreen",
             fill: false
         }
         datasets[8] = {
+         
             label: "Sektor",
             data: [],
             borderColor: "lightgrey",
             fill: false
         }
         datasets[9] = {
+          
             label: "Vermeidung",
             data: [],
             borderColor: "darkred",
@@ -138,17 +148,40 @@
 
         var cconfig = {
             type: 'line',
+
             data: {
                 labels: xlabels,
                 datasets: datasets
             },
             options: {
                 // Äußeres Gerüst
+           
                 responsive: true,
                 title: {
                     display: true,
                     text: "Google Trends"
                 },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function (val, index) {
+                                // Hide the label of every 2nd dataset
+                                return index % 2 === 0 ? this.getLabelForValue(val) : '';
+                            },
+                            color: 'red',
+
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                       
+
+                        afterFit: (scale) => {
+                            scale.height = 120;
+                        }
+                    }
+                }
                 // Darstellung Mouse Hoover über Säulen (Bars)
 
 
