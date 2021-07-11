@@ -18,8 +18,8 @@ app.get("/csv", function (req, res) {
 
     var filename = path.join(__dirname, "static");
     filename = path.join(filename, "data");
-    // filename = path.join(filename, "verordnung_dummy_0.csv");
-    filename = path.join(filename, "alleverordnungen.csv");
+    filename = path.join(filename, "verordnung_dummy_0.csv");
+    //filename = path.join(filename, "alleverordnungen.csv");
     var counter = 0;
 
     var records = [];
@@ -99,41 +99,75 @@ app.get("/google_data", function (req, res) {
             console.log('Error parsing JSON string: ', err)
         }
     })
-/*
-    fs.createReadStream(filename, 'utf8', (err, jsonString))
-        .pipe(JSON.parse(jsonString))
-        .on("data", function (data) {
+    /*
+        fs.createReadStream(filename, 'utf8', (err, jsonString))
+            .pipe(JSON.parse(jsonString))
+            .on("data", function (data) {
+    
+                var that = this;
+                that.pause();
+                counter++;
+                // Verarbeitung der Daten
+                if (counter === 1) {
+                    console.log("Keys: " + data);
+    
+                }
+    
+                google_records.push(data);
+    
+                // console.log(JSON.stringify(keys, null, " "))
+    
+    
+    
+                that.resume();
+            })
+            .on("end", function () {
+                var smsg = JSON.stringify({
+                    error: false,
+                    message: "CSV wurde gelesen: ",
+                    google_records: google_records
+                })
+    
+                res.writeHead(200, {
+                    "Cotent-Type": "application/text",
+                    "Access-Control-Allow-Origin": "*"
+                });
+                res.end(smsg);
+                return;
+            });
+    */
+});
 
-            var that = this;
-            that.pause();
-            counter++;
-            // Verarbeitung der Daten
-            if (counter === 1) {
-                console.log("Keys: " + data);
 
-            }
+app.get("/term_data", function (req, res) {
+    var filename = path.join(__dirname, "static");
+    filename = path.join(filename, "data");
+    filename = path.join(filename, "verordnungen_all_with_addressee.json");
+    console.log("Filename: " + filename);
+    var term_record = [];
 
-            google_records.push(data);
-
-            // console.log(JSON.stringify(keys, null, " "))
-
-
-
-            that.resume();
-        })
-        .on("end", function () {
+    fs.readFile(filename, 'utf8', (err, jsonString) => {
+        if (err) {
+            console.log("Error reading file from disk:", err)
+            return
+        } try {
+            term_record = JSON.parse(jsonString)
+            console.log("Entire data set: ", term_record)
             var smsg = JSON.stringify({
                 error: false,
-                message: "CSV wurde gelesen: ",
-                google_records: google_records
+                message: "JSON wurde gelesen: " + term_record,
+                term_record: term_record
             })
 
             res.writeHead(200, {
-                "Cotent-Type": "application/text",
+                "Content-Type": "application/text",
                 "Access-Control-Allow-Origin": "*"
             });
             res.end(smsg);
             return;
-        });
-*/
+        } catch (err) {
+            console.log('Error parsing JSON string: ', err)
+        }
+    })
+
 });

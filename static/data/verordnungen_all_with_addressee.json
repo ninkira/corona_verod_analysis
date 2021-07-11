@@ -1,0 +1,1543 @@
+{
+    "verordnungen": [
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-03-22 Änderung 1"},
+                {"publicationDate": "2020-03-30"},
+                {"effectiveDate": "2020-03-31"},
+                {"expiryDate": "2020-04-19"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"des Infektionsschutzgesetzes": 16},
+                {"Hygiene": 13},
+                {"Vermeidung": 12}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO"},
+                {"publicationDate": "2020-03-30"},
+                {"effectiveDate": "2020-04-03"},
+                {"expiryDate": "2020-04-19"},
+                {"addressee":"Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Betreuung": 14},
+                {"Einrichtungen": 13},
+                {"Sektor": 10}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaAufnahmeVO"},
+                {"publicationDate": "2020-04-03"},
+                {"effectiveDate": "2020-04-03"},
+                {"expiryDate":"not stated"},
+                {"addressee": "Bewohner:innen von Alten- u. Pflegeheimen"}
+                ],
+            "top-3": [
+                {"Menschen": 11},
+                {"Quarantäne- bzw. Isolationsbereichen": 7},
+                {"Wohnformen": 6},
+                {"Behinderung": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Ausbildungsgewährleistungsverordnung"},
+                {"publicationDate": "2020-03-31"},
+                {"effectiveDate": "2020-04-01"},
+                {"expiryDate": "2020-04-30"},
+                {"addressee": "Feuerwehrleute in Ausbildung und deren Ausbilder:innen"}
+                ],
+            "top-3": [
+                {"Feuerwehrtechnischen": 17},
+                {"Dienstes": 15},
+                {"Laufbahngruppe": 12}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO"},
+                {"publicationDate": "2020-04-09"},
+                {"effectiveDate": "2020-04-10"},
+                {"expiryDate": "2020-04-19"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 12},
+                {"Behörde": 7},
+                {"Aufenthaltsort": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEpidemieHochschulVO"},
+                {"publicationDate": "2020-04-15"},
+                {"effectiveDate": "2020-04-16"},
+                {"expiryDate": "2021-04-01"},
+                {"addressee": "Hochschulen"}
+                ],
+            "top-3": [
+                {"Hochschule/Hochschulen": 27},
+                {"Rektorat": 24},
+                {"Hochschulgesetzes": 13}
+            ]
+        },
+        
+        {
+            "metadata": [
+                {"name": "ÄnderungRechtsVO 1 Änderung 1"},
+                {"publicationDate": "2020-04-17"},
+                {"effectiveDate": "2020-04-18"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"geändert": 6},
+                {"Verordnung": 6},
+                {"Angabe": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchV 2020-03-22 Änderung 2"},
+                {"publicationDate": "2020-04-24"},
+                {"effectiveDate": "2020-04-27"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Wort/Wörter": 15},
+                {"Angabe": 5},
+                {"Personen": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-04-02 Änderung 1"},
+                {"publicationDate": "2020-04-24"},
+                {"effectiveDate": "2020-04-27"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Bewohner:innen von Alten- u. Pflegeheimen"}
+                ],
+            "top-3": [
+                {"Vor-Ort-Betreuung": 7},
+                {"Person": 7},
+                {"Aufnahme": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 2"},
+                {"publicationDate": "2020-05-01"},
+                {"effectiveDate": "2020-05-02"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 20},
+                {"Mindestabstands": 20},
+                {"Einrichtungen": 19},
+                {"Vorkehrungen": 19}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-04-02 Änderung 2"},
+                {"publicationDate": "2020-05-05"},
+                {"effectiveDate": "2020-05-06"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Schule": 8},
+                {"Vor-Ort-Betreuung": 7},
+                {"Aufnahme": 7},
+                {"Entscheidung": 7},
+                {"Person": 7}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 3"},
+                {"publicationDate": "2020-05-06"},
+                {"effectiveDate": "2020-05-07"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtung/Einrichtungen": 48},
+                {"Besuche": 14},
+                {"Angabe": 13},
+                {"Vorkehrungen": 13},
+                {"Hygiene": 13},
+                {"Gewährleistung": 13},
+                {"Warteschlangen": 13},
+                {"Mindeststandards": 13}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 4"},
+                {"publicationDate": "2020-05-08"},
+                {"effectiveDate": "2020-05-10"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtung/Einrichtungen": 55},
+                {"Mindestabstands": 32},
+                {"1,5 Meter/n": 27}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-04-02 Änderung 3"},
+                {"publicationDate": "2020-05-11"},
+                {"effectiveDate": "2020-05-14"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"geändert": 2},
+                {"angefügt": 2},
+                {"Anforderungen": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-04-09 Änderung 1"},
+                {"publicationDate": "2020-05-14"},
+                {"effectiveDate": "2020-05-15"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Staatengruppe": 7},
+                {"geändert": 4},
+                {"Einreise": 3},
+                {"Personen": 3},
+                {"Staat": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoSchV 2020-05-08 Änderung 1"},
+                {"publicationDate": "2020-05-15"},
+                {"effectiveDate": "2020-05-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"entgegen": 32},
+                {"betreibt": 13},
+                {"ohne": 11}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Corona-Epidemie-Hochschulverordnung 2020-04-15 Änderung 1"},
+                {"publicationDate": "2020-05-15"},
+                {"effectiveDate": "2020-05-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Hochschulen"}
+                ],
+            "top-3": [
+                {"Regelungen": 13},
+                {"geändert": 9},
+                {"Hochschulgesetzes": 9}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "ÄnderungRechtsVO 5"},
+                {"publicationDate": "2020-05-19"},
+                {"effectiveDate": "2020-05-20"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Metern": 18},
+                {"Personen": 16},
+                {"zwei": 12},
+                {"1,5": 12},
+                {"Gruppen": 12}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-05-08 Änderung 1"},
+                {"publicationDate": "2020-05-20"},
+                {"effectiveDate": "2020-05-21"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 4},
+                {"NRW": 3},
+                {"Coronaschutzverordnung": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-05-08 Änderung 2"},
+                {"publicationDate": "2020-05-27"},
+                {"effectiveDate": "2020-05-30"},
+                {"expiryDate": "2020-06-15"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 46},
+                {"Einrichtungen": 43},
+                {"Mindestabstands": 29}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "ÄndBO Hebammen"},
+                {"publicationDate": "2020-05-18"},
+                {"effectiveDate": "2020-05-19"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Hebammen und Geburtshelfer:innen"}
+                ],
+            "top-3": [
+                {"Verordnung": 2},
+                {"Berufsordnung": 2},
+                {"Hebammen": 2},
+                {"Entbindungspfleger": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "ÄnderungRechtsVO 6"},
+                {"publicationDate": "2020-05-29"},
+                {"effectiveDate": "2020-05-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Coronaschutzverordnung": 10},
+                {"Personen": 9},
+                {"Nutzung": 7}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-04-02 Änderung 4"},
+                {"publicationDate": "2020-06-02"},
+                {"effectiveDate": "2020-06-08"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Kindertageseinrichtungen": 9},
+                {"Kinder": 7},
+                {"Stunden": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "ÄnderungRechtsVO 7 bzw. CoronaSchVO 2020-06-10"},
+                {"publicationDate": "2020-06-10"},
+                {"effectiveDate": "2020-06-15"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 63},
+                {"Verordnung": 43},
+                {"Einrichtungen": 40}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 8"},
+                {"publicationDate": "2020-06-15"},
+                {"effectiveDate": "2020-06-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 5},
+                {"NRW": 4},
+                {"Coronaschutzverordnung": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-06-18 Änderung 1"},
+                {"publicationDate": "2020-06-18"},
+                {"effectiveDate": "2020-06-19"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaschutzverordnung": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-06-18 Änderung 2"},
+                {"publicationDate": "2020-06-19"},
+                {"effectiveDate": "2020-06-20"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaschutzverordnung": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-06-21"},
+                {"publicationDate": "2020-06-21"},
+                {"effectiveDate": "2020-06-22"},
+                {"expiryDate": "2020-07-01"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 16},
+                {"Gesundheitsamt": 11},
+                {"Einreise": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaRegioVO 2020-06-23"},
+                {"publicationDate": "2020-06-23"},
+                {"effectiveDate": "2020-06-24"},
+                {"expiryDate": "2020-06-30"},
+                {"addressee": "alle, die in Regionen mit erhöhtem Infektionsgeschehen leben"}
+                ],
+            "top-3": [
+                {"Coronaschutzverordnung": 8},
+                {"Einrichtungen": 6},
+                {"öffentlichen": 6},
+                {"Verordnung": 5},
+                {"Betrieb": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaRegioVO 2020-06-23 Änderung 1"},
+                {"publicationDate": "2020-06-24"},
+                {"effectiveDate": "2020-06-25"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle, die in Regionen mit erhöhtem Infektionsgeschehen leben"}
+                ],
+            "top-3": [
+                {"öffnet": 3},
+                {"betreibt": 3},
+                {"durchführt": 3},
+                {"Zeugnis": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaRegioVO 2020-06-30"},
+                {"publicationDate": "2020-06-30"},
+                {"effectiveDate": "2020-07-01"},
+                {"expiryDate": "2020-07-07"},
+                {"addressee": "alle, die in Regionen mit erhöhtem Infektionsgeschehen leben"}
+                ],
+            "top-3": [
+                {"Coronaschutzverordnung": 10},
+                {"Einrichtungen": 8},
+                {"öffentlichen": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-07-01"},
+                {"publicationDate": "2020-07-01"},
+                {"effectiveDate": "2020-07-02"},
+                {"expiryDate": "2020-07-15"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 57},
+                {"entgegen": 39},
+                {"1,5 Meter/n": 34}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-07-01"},
+                {"publicationDate": "2020-07-01"},
+                {"effectiveDate": "2020-07-02"},
+                {"expiryDate": "2020-07-15"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 16},
+                {"Gesundheitsamt": 11},
+                {"Einreise": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-07-01"},
+                {"publicationDate": "2020-07-01"},
+                {"effectiveDate": "2020-07-02"},
+                {"expiryDate": "2020-07-15"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Einrichtungen": 14},
+                {"Nutzung": 12},
+                {"Robert Koch-Instituts": 10},
+                {"Personen": 10},
+                {"Entscheidung": 10}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 9"},
+                {"publicationDate": "2020-07-06"},
+                {"effectiveDate": "2020-07-07"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 2},
+                {"Infektionsschutzgesetzes": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 10"},
+                {"publicationDate": "2020-07-12"},
+                {"effectiveDate": "2020-07-15"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 32},
+                {"Rückverfolgbarkeit": 16},
+                {"1,5 Meter/n": 14}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Corona EinreiseVO 2020-07-01 Änderung 1"},
+                {"publicationDate": "2020-07-17"},
+                {"effectiveDate": "2020-07-18"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaeinreiseverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-08-11"},
+                {"publicationDate": "2020-08-11"},
+                {"effectiveDate": "2020-08-12"},
+                {"expiryDate": "2020-08-31"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 59},
+                {"1,5 Meter/n": 34},
+                {"Einrichtungen": 32}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-08-11"},
+                {"publicationDate": "2020-08-11"},
+                {"effectiveDate": "2020-08-12"},
+                {"expiryDate": "2020-08-31"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 19},
+                {"Einreise": 11},
+                {"Gesundheitsamt": 8},
+                {"unverzüglich": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-08-11"},
+                {"publicationDate": "2020-08-11"},
+                {"effectiveDate": "2020-08-12"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 16},
+                {"Einrichtungen": 16},
+                {"Nutzung": 13},
+                {"Kindertageseinrichtungen": 12}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-08-11 Änderung 1"},
+                {"publicationDate": "2020-08-13"},
+                {"effectiveDate": "2020-08-14"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 2},
+                {"Verordnung": 2},
+                {"Coronaschutzverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-08-28"},
+                {"publicationDate": "2020-08-28"},
+                {"effectiveDate": "2020-08-29"},
+                {"expiryDate": "2020-09-30"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Betrieb": 9},
+                {"Beschäftigte": 6},
+                {"Personen": 6},
+                {"zuständigen": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-08-31"},
+                {"publicationDate": "2020-08-31"},
+                {"effectiveDate": "2020-09-01"},
+                {"expiryDate": "2020-09-15"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 64},
+                {"entgegen": 43},
+                {"1,5 Meter/n": 34},
+                {"Einrichtungen": 34}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-08-31"},
+                {"publicationDate": "2020-08-31"},
+                {"effectiveDate": "2020-09-01"},
+                {"expiryDate": "2020-09-15"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 17},
+                {"Nutzung": 16},
+                {"Einrichtungen": 15}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-08-31"},
+                {"publicationDate": "2020-08-31"},
+                {"effectiveDate": "2020-09-01"},
+                {"expiryDate": "2020-09-15"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 18},
+                {"Einreise": 12},
+                {"Verpflichtungen": 8},
+                {"unverzüglich": 8},
+                {"entgegen": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-09-15"},
+                {"publicationDate": "2020-09-15"},
+                {"effectiveDate": "2020-09-16"},
+                {"expiryDate": "2020-09-16"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 64},
+                {"entgegen": 45},
+                {"1,5 Meter/n": 34}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-09-15"},
+                {"publicationDate": "2020-09-15"},
+                {"effectiveDate": "2020-09-16"},
+                {"expiryDate": "2020-09-30"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 17},
+                {"Nutzung": 16},
+                {"Einrichtungen": 15}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-15"},
+                {"publicationDate": "2020-09-15"},
+                {"effectiveDate": "2020-09-16"},
+                {"expiryDate": "2020-09-30"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 18},
+                {"Einreise": 12},
+                {"Verpflichtungen": 8},
+                {"unverzüglich": 8},
+                {"entgegen": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-15 Änderung 1"},
+                {"publicationDate": "2020-09-18"},
+                {"effectiveDate": "2020-09-19"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"NRW": 2},
+                {"Verordnung": 2},
+                {"Coronaeinreiseverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-08-28 Änderung 1"},
+                {"publicationDate": "2020-09-25"},
+                {"effectiveDate": "2020-09-26"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Personen": 4},
+                {"Vermeidung": 2},
+                {"Infektionsgeschehen": 2},
+                {"Coronavirus": 2},
+                {"SARS-CoV-2": 2},
+                {"Großbetrieben": 2},
+                {"Fleischwirtschaft": 2}
+
+
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-09-30"},
+                {"publicationDate": "2020-09-30"},
+                {"effectiveDate": "2020-10-01"},
+                {"expiryDate": "2020-10-31"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 67},
+                {"Einrichtungen": 34},
+                {"1,5 Meter/n": 34},
+                {"Mindestabstand": 32}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-09-30"},
+                {"publicationDate": "2020-09-30"},
+                {"effectiveDate": "2020-10-01"},
+                {"expiryDate": "2020-10-31"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 17},
+                {"Nutzung": 15},
+                {"Einrichtungen": 15},
+                {"Robert Koch-Institut": 11}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-30"},
+                {"publicationDate": "2020-09-30"},
+                {"effectiveDate": "2020-10-01"},
+                {"expiryDate": "2020-10-31"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 18},
+                {"Einreise": 12},
+                {"Risikogebiet": 8},
+                {"Verpflichtungen": 8},
+                {"unverzüglich": 8},
+                {"entgegen": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-30 Änderung 1"},
+                {"publicationDate": "2020-10-01"},
+                {"effectiveDate": "2020-10-02"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"NRW": 2},
+                {"Verordnung": 2},
+                {"Coronaeinreiseverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-30 Änderung 2"},
+                {"publicationDate": "2020-10-06"},
+                {"effectiveDate": "2020-10-07"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Risikogebiet": 6},
+                {"Personen": 5},
+                {"Verordnung": 4}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-09-30 Änderung 1"},
+                {"publicationDate": "2020-10-13"},
+                {"effectiveDate": "2020-10-14"},
+                {"expiryDate": "2020-10-31"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 6},
+                {"Teilnehmern": 5},
+                {"7-Tages-Inzidenz": 5},
+                {"Fest": 5},
+                {"Schutzmaßnahmen": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-09-30 Änderung 2"},
+                {"publicationDate": "2020-10-16"},
+                {"effectiveDate": "2020-10-17"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 14},
+                {"Veranstaltungen": 9},
+                {"Versammlungen": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-09-30 Änderung 1"},
+                {"publicationDate": "2020-10-21"},
+                {"effectiveDate": "2020-10-26"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 3},
+                {"Mund-Nase-Bedeckung": 3},
+                {"Mindestabstand": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-09-30 Änderung 3"},
+                {"publicationDate": "2020-10-29"},
+                {"effectiveDate": "2020-10-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaschutzverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-09-30"},
+                {"publicationDate": "2020-10-29"},
+                {"effectiveDate": "2020-10-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaeinreiseverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-08-28 Änderung 2"},
+                {"publicationDate": "2020-10-29"},
+                {"effectiveDate": "2020-10-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Verordnung": 5},
+                {"NRW": 3},
+                {"Infektionsgeschehen": 2},
+                {"Coronavirus": 2},
+                {"SARS-CoV-2": 2},
+                {"Großbetrieben": 2},
+                {"Fleischwirtschaft": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-10-30"},
+                {"publicationDate": "2020-10-30"},
+                {"effectiveDate": "2020-11-02"},
+                {"expiryDate": "2020-11-30"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtungen": 38},
+                {"Personen": 30},
+                {"Regelungen": 18}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEpidemieHochschulVO, Änderung 2"},
+                {"publicationDate": "2020-10-31"},
+                {"effectiveDate": "2020-11-01"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Hochschulen"}
+                ],
+            "top-3": [
+                {"Mitglied": 11},
+                {"Gremium/s": 10},
+                {"Rektorat": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-10-30 Änderung 1"},
+                {"publicationDate": "2020-11-04"},
+                {"effectiveDate": "2020-11-04"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 5},
+                {"zulässig": 4},
+                {"Getränken": 3},
+                {"23 Uhr": 2},
+                {"6 Uhr": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "HSBdVV 2020-11-05"},
+                {"publicationDate": "2020-11-05"},
+                {"effectiveDate": "2020-11-06"},
+                {"expiryDate": "2021-12-31"},
+                {"addressee": "Hochschulen"}
+                ],
+            "top-3": [
+                {"Akademische": 12},
+                {"Verlängerung": 9},
+                {"verlängert": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-11-06"},
+                {"publicationDate": "2020-11-06"},
+                {"effectiveDate": "2020-11-09"},
+                {"expiryDate": "2020-11-30"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 28},
+                {"Einreise": 18},
+                {"Risikogebiet": 13}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-10-30 Änderung 2"},
+                {"publicationDate": "2020-11-09"},
+                {"effectiveDate": "2020-11-10"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 4},
+                {"NRW": 3},
+                {"Einrichtungen": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-09-30 Änderung 2"},
+                {"publicationDate": "2020-11-09"},
+                {"effectiveDate": "2020-11-10"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Alltagsmaske": 4},
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaschutzverordnung": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-11-27"},
+                {"publicationDate": "2020-11-27"},
+                {"effectiveDate": "2020-11-28"},
+                {"expiryDate": "2020-12-15"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Betrieb": 9},
+                {"Personen": 9},
+                {"Beschäftigte": 6},
+                {"zuständigen": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "QuarantäneVO 2020-11-30"},
+                {"publicationDate": "2020-11-30"},
+                {"effectiveDate": "2020-12-01"},
+                {"expiryDate": "2020-12-20"},
+                {"addressee": "alle in NRW, die aufgrund eigener Positivtests oder Kontakt zu positiv Getesteten in Quarantäne müssen"}
+                ],
+            "top-3": [
+                {"Quarantäne": 34},
+                {"Personen": 20},
+                {"Regelungen": 9},
+                {"Gesundheisamt": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-11-30"},
+                {"publicationDate": "2020-11-30"},
+                {"effectiveDate": "2020-12-01"},
+                {"expiryDate": "2020-12-20"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 20},
+                {"Nutzung": 16},
+                {"Einrichtungen": 16},
+                {"Robert Koch-Institut": 11},
+                {"Betreuung": 11}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-11-30"},
+                {"publicationDate": "2020-11-30"},
+                {"effectiveDate": "2020-12-01"},
+                {"expiryDate": "2020-12-20"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtungen": 44},
+                {"Personen": 37},
+                {"Regelungen": 21}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 2020-12-08"},
+                {"publicationDate": "2020-12-08"},
+                {"effectiveDate": "2020-12-09"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Getränke/n": 8},
+                {"Speisen": 5},
+                {"Verkaufsstelle": 4},
+                {"Umkreis": 4},
+                {"Metern": 4},
+                {"23 Uhr": 3},
+                {"6 Uhr": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEpidemieHochschulVO Änderung 3"},
+                {"publicationDate": "2020-12-11"},
+                {"effectiveDate": "2020-12-12"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Hochschulen"}
+                ],
+            "top-3": [
+                {"NRW": 13},
+                {"Verordnung": 5},
+                {"Hochschulgesetzes": 5},
+                {"Kunsthochschulgesetzes": 5},
+                {"in elektronischer Form": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-11-30 Änderung 1"},
+                {"publicationDate": "2020-12-14"},
+                {"effectiveDate": "2020-12-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtungen": 33},
+                {"Personen": 20},
+                {"zulässig": 20},
+                {"Regelungen": 15}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2020-11-30 Änderung 1"},
+                {"publicationDate": "2020-12-15"},
+                {"effectiveDate": "2020-12-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Verordnung": 4},
+                {"NRW": 3},
+                {"Personen": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-11-30 Änderung 2"},
+                {"publicationDate": "2020-12-15"},
+                {"effectiveDate": "2020-12-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 4},
+                {"NRW": 3},
+                {"Coronaschutzverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-11-27 Änderung 1"},
+                {"publicationDate": "2020-12-15"},
+                {"effectiveDate": "2020-12-16"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Verordnung": 5},
+                {"NRW": 3},
+                {"Infektionsgeschehen": 3},
+                {"Coronavirus": 3},
+                {"SARS-CoV-2": 3},
+                {"Großbetrieben": 3},
+                {"Fleischwirtschaft": 3}
+
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2020-12-16"},
+                {"publicationDate": "2020-12-16"},
+                {"effectiveDate": "2020-12-17"},
+                {"expiryDate": "2021-01-10"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Betrieb/e": 14},
+                {"Personen": 9},
+                {"Beschäftigte": 6},
+                {"zuständigen": 6},
+                {"Coronavirus": 5},
+                {"SARS-CoV-2": 5},
+                {"Produktion": 5},
+                {"Verpflichtungen": 5}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-11-30 Änderung 3"},
+                {"publicationDate": "2020-"},
+                {"effectiveDate": "2020-"},
+                {"expiryDate": "2020-"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 3},
+                {"Verordnung": 3},
+                {"Coronaschutzverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "QuarantäneVO 2020-12-18"},
+                {"publicationDate": "2020-12-18"},
+                {"effectiveDate": "2020-12-21"},
+                {"expiryDate": "2021-01-18"},
+                {"addressee": "alle in NRW, die aufgrund eigener Positivtests oder Kontakt zu positiv Getesteten in Quarantäne müssen"}
+                ],
+            "top-3": [
+                {"Quarantäne": 39},
+                {"Personen": 19},
+                {"Verordnung": 13},
+                {"Gesundheitsamt": 11}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinrVK-VO"},
+                {"publicationDate": "2020-12-20"},
+                {"effectiveDate": "2020-12-21"},
+                {"expiryDate": "2021-01-17"},
+                {"addressee": "Reiserückkehrer aus UK und Südafrika"}
+                ],
+            "top-3": [
+                {"Personen": 15},
+                {"Einreise": 12},
+                {"Gesundheitsbehörde": 8}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 11"},
+                {"publicationDate": "2020-12-22"},
+                {"effectiveDate": "2020-12-23"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Kunden": 5},
+                {"NRW": 4},
+                {"Personen": 4}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 12"},
+                {"publicationDate": "2020-12-23"},
+                {"effectiveDate": "2020-12-28"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Personen": 9},
+                {"Risikogebiet": 8},
+                {"Einreise": 7}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-12-20 Änderung 1"},
+                {"publicationDate": "2020-12-30"},
+                {"effectiveDate": "2020-12-31"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 5},
+                {"Regelungen": 4},
+                {"Testpflichten": 4},
+                {"NRW": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2020-11-30 Änderung 4"},
+                {"publicationDate": "2020-12-30"},
+                {"effectiveDate": "2020-12-31"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 3},
+                {"NRW": 3},
+                {"Coronaschutzverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2020-12-20 Änderung 2"},
+                {"publicationDate": "2021-01-04"},
+                {"effectiveDate": "2021-01-05"},
+                {"expiryDate": "not stated"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Einreise": 9},
+                {"Verordnung": 6},
+                {"Personen": 6},
+                {"NRW": 3},
+                {"Einreisetestung": 3},
+                {"Absonderungspflicht": 3},
+                {"Risikogebiet": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2021-01-07"},
+                {"publicationDate": "2021-01-07"},
+                {"effectiveDate": "2021-01-11"},
+                {"expiryDate": "2021-01-31"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Einrichtungen": 55},
+                {"Verordnung": 41},
+                {"Personen": 31},
+                {"Regelungen": 28}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaBetrVO 2021-01-07"},
+                {"publicationDate": "2021-01-07"},
+                {"effectiveDate": "2021-01-11"},
+                {"expiryDate": "2021-01-31"},
+                {"addressee": "Kita-Kinder, Schüler:innen, Bewohner:innen von Betreuungseinrichtungen"}
+                ],
+            "top-3": [
+                {"Personen": 20},
+                {"Nutzung": 16},
+                {"Einrichtungen": 16},
+                {"Betreuung": 14}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaFleischwirtschaftVO 2021-01-08"},
+                {"publicationDate": "2021-01-08"},
+                {"effectiveDate": "2021-01-11"},
+                {"expiryDate": "2021-01-31"},
+                {"addressee": "Beschäftigte und Arbeitgeber:innen im fleischverarbeitenden Gewerbe"}
+                ],
+            "top-3": [
+                {"Betrieb": 9},
+                {"Personen": 9},
+                {"Verordnung": 6},
+                {"Beschäftigte": 6},
+                {"zuständigen": 6}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaRegioVO 2021-01-11"},
+                {"publicationDate": "2021-01-11"},
+                {"effectiveDate": "2021-01-12"},
+                {"expiryDate": "2021-01-31"},
+                {"addressee": "alle, die in Regionen mit erhöhtem Infektionsgeschehen leben"}
+                ],
+            "top-3": [
+                {"Gebiet": 5},
+                {"Personen": 4},
+                {"15 Kilometern": 4},
+                {"Bewegungsradius": 3}
+
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaEinreiseVO 2021-01-15"},
+                {"publicationDate": "2021-01-15"},
+                {"effectiveDate": "2021-01-16"},
+                {"expiryDate": "2021-01-31"},
+                {"addressee": "Ein- und Rückreisende nach NRW"}
+                ],
+            "top-3": [
+                {"Personen": 23},
+                {"Einreise": 19},
+                {"Coronavirus": 10},
+                {"Infektion": 10}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Quarantäneverordnung NRW 2021-01-18"},
+                {"publicationDate": "2021-01-18"},
+                {"effectiveDate": "2021-01-19"},
+                {"expiryDate": "2021-02-12"},
+                {"addressee": "alle in NRW, die aufgrund eigener Positivtests oder Kontakt zu positiv Getesteten in Quarantäne müssen"}
+                ],
+            "top-3": [
+                {"Quarantäne": 41},
+                {"Personen": 20},
+                {"Regelungen": 11},
+                {"Gesundheitsamt": 11}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaRegioVO 2021-01-11 Änderung 1"},
+                {"publicationDate": "2021-01-18"},
+                {"effectiveDate": "2021-01-19"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle, die in Regionen mit erhöhtem Infektionsgeschehen leben"}
+                ],
+            "top-3": [
+                {"Verordnung": 3},
+                {"NRW": 2},
+                {"Coronaregionalverordnung": 2}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "CoronaSchVO 2021-01-07 Änderung 1"},
+                {"publicationDate": "2021-01-21"},
+                {"effectiveDate": "2021-01-25"},
+                {"expiryDate": "2021-02-14"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"Verordnung": 11},
+                {"Maske": 10},
+                {"Verpflichtung": 10},
+                {"Personen": 10}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 13"},
+                {"publicationDate": "2021-01-28"},
+                {"effectiveDate": "2021-01-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 8},
+                {"Verordnung": 4},
+                {"Klassen": 3}
+            ]
+        },
+
+        {
+            "metadata": [
+                {"name": "Änderung RechtsVO 14"},
+                {"publicationDate": "2021-01-29"},
+                {"effectiveDate": "2021-01-30"},
+                {"expiryDate": "not stated"},
+                {"addressee": "alle in NRW"}
+                ],
+            "top-3": [
+                {"NRW": 5},
+                {"Verordnung": 5},
+                {"Coronabetreuungsverordnung": 2},
+                {"Infektionsschutzgesetz": 2}
+            ]
+        }
+
+    ]   
+}  
