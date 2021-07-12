@@ -164,22 +164,13 @@
                 scales: {
                     x: {
                         beginAtZero: true,
-                        ticks: {
-                            callback: function (val, index) {
-                                // Hide the label of every 2nd dataset
-                                return index % 2 === 0 ? this.getLabelForValue(val) : '';
-                            },
-                            color: 'red',
-
-                        }
+                      
                     },
                     y: {
                         beginAtZero: true,
                        
 
-                        afterFit: (scale) => {
-                            scale.height = 120;
-                        }
+                       
                     }
                 }
                 // Darstellung Mouse Hoover über Säulen (Bars)

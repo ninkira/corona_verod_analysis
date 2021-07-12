@@ -29,9 +29,11 @@
 <body>
 
 
+    <nav class="px-5 navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
+    </nav>
 
-
-<!--
+    <!--
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
     </nav>
@@ -77,41 +79,82 @@
         </div>
     </div>
 -->
+<!--
     <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
     <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
     <button id="termchart_button" class="px-3 mt-4 mb-1">TermChart anzeigen</button>
+   <div id="btn_test"></div>
+-->
 
-
-    <div id="btn_test"></div>
-    <div class="main">
-
-        <div>
-            <canvas id="myChart"></canvas>
+ 
+    <!--<div class="main">
         </div>
-        <div  style="position: relative; height:50vh; width:80vw">
-            <canvas id="test-line-chart" ></canvas>
-        </div>
-        <div>
-            <canvas id="test-term-chart" width="200em"></canvas>
-        </div>
-
-
-
-
-        <script>
-            $(document).on("click", "#button", function (evt) {
-                tabelle_js.get_data();
-            });
-
-            $(document).on("click", "#linechart_button", function (evt) {
-                linechart_js.get_data();
-            });
-            $(document).on("click", "#termchart_button", function (evt) {
-                tabelle_term.get_data();
-            });
-
-        </script>
+    -->
+    <div class="px-5 mt-3">
+        <h1> Häufigkeitsanalyse innerhalb der Verordnungen</h1>
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
     </div>
+    <div div class="px-5" style="width:100vw;">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="px-5 mt-3">
+        <h1>Google Trends Analyse</h1>
+
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div div class="px-5" style="width:100vw">
+        <canvas id="test-line-chart"></canvas>
+    </div>
+    <!--
+    <div>
+        <canvas div class="px-5" id="test-term-chart" width="200em"></canvas>
+    </div>
+    -->
+    <div class="px-5 mt-3">
+        <h1>TL;DR</h1>
+
+        <p class="text-justify">
+            Team: Max, Nina, Valeria, Anne
+        </p>
+    </div>
+
+
+
+    <script>
+
+        window.onload = function () {
+            linechart_js.get_data();
+            tabelle_term.get_data();
+        };
+        /*
+        $(document).on("click", "#button", function (evt) {
+            tabelle_js.get_data();
+        });
+
+        $(document).on("click", "#linechart_button", function (evt) {
+            linechart_js.get_data();
+        });
+        $(document).on("click", "#termchart_button", function (evt) {
+            tabelle_term.get_data();
+        });
+*/
+    </script>
+
 </body>
 
 </html>
