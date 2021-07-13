@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
@@ -17,6 +17,7 @@
 
     <script type="text/javascript" src="js/tabelle_js.js"></script>
     <script type="text/javascript" src="js/linechart_js.js"></script>
+    <script type="text/javascript" src="js/tabelle_term.js"></script>
     <!-- CSS only -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,9 +29,11 @@
 <body>
 
 
+    <nav class="px-5 navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
+    </nav>
 
-
-
+    <!--
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
     </nav>
@@ -47,7 +50,7 @@
                                 <span>Waehlen Sie zwei Begriffe</span>
                             </h6>
 
-                             <span>Google Trends Begriffe </span>
+                            <span>Google Trends Begriffe </span>
                             <select class="form-select px-3 mt-4 mb-1">
                                 <option selected>Begriff 1</option>
                                 <option value="1">One</option>
@@ -67,138 +70,294 @@
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
-                            <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
                       
-                       
+
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
+-->
+    <!--
+    <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
+    <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
+    <button id="termchart_button" class="px-3 mt-4 mb-1">TermChart anzeigen</button>
+   <div id="btn_test"></div>
+-->
 
 
-
-    <div id="btn_test"></div>
-    <div class="main">
-        <!--
-        <button onclick="tabelle_js.get_data()">Test</button>
-    <br>
-    
-   -->
-        <div>
-            <canvas id="myChart"></canvas>
+    <!--<div class="main">
         </div>
-      <div>
-        <canvas id="test-line-chart" width="800" height="450"></canvas>
-      </div>
-      
-    
-
-
-        <script>
-            $(document).on("click", "#button", function (evt) {
-                tabelle_js.get_data();
-            });
-         
-            $(document).on("click", "#linechart_button", function (evt) {
-                linechart_js.get_data();
-            });
-
-
-
-            /*
-            
-                    // Mixed Chart für später 
-                    var chartDefault = {
-                        // @Valeria; TO-DO: Anpassung an die Werte von Max
-                        type: 'bar',
-                        data: {
-                            labels: ['Infektionsschutzgesetz', 'Steuerung des Zutritts', 'Mindestabstand', 'Schutzvorkehrungen', 'Hygienekonzept', 'Außer Hausverkauf'],
-                            datasets: [{
-                                type: 'bar',
-                                label: 'Receivable',
-                                data: [730, 492.5, 120, 4732.5, 2760.85, 0],
-                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                                borderColor: 'rgba(75, 192, 192, 1)',
-                                borderWidth: 1
-                            }, {
-                                type: 'bar',
-                                label: 'Past Due',
-                                data: [2760.85, 0, 0, 0, 0, 0],
-                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                                borderColor: 'rgba(255,99,132,1)',
-                                borderWidth: 1
-                            }, {
-                                type: 'scatter',
-                                label: 'Google Trends',
-                                data: [{ "x": 106, "y": 177.7 }, { "x": 101, "y": 1 }, { "x": 92, "y": 1 }, { "x": 88, "y": 120 }, { "x": 65, "y": 4 }, { "x": 66, "y": 120 }, { "x": 59, "y": 120 }, { "x": 36, "y": 372.5 }, { "x": 35, "y": 120 }, { "x": 29, "y": 120 }, { "x": 4, "y": 185 }, { "x": 4, "y": 120 }, { "x": 1, "y": 240 }, { "x": 1, "y": 65 }],
-                                xAxisID: 'invoice-time',
-                                yAxisID: 'invoice-amount',
-                                backgroundColor: 'rgba(75, 00, 150, 0.2)',
-                                borderColor: 'rgba(75, 00, 150,1)',
-                                borderWidth: 2
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                xAxes: [{
-                                    display: true,
-                                    stacked: true,
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'Coronaschutzverordnung (NRW)'
-                                    },
-                                }, {
-                                    id: 'invoice-time',
-                                    type: 'linear',
-                                    display: false,
-                                    stacked: false,
-                                    scaleLabel: {
-                                        display: false,
-                                        labelString: 'Coronaschutzverordnung (NRW)'
-                                    },
-                                    ticks: {
-                                        beginAtZero: true,
-                                        stepSize: 1,
-                                        suggestedMax: 125
-                                    }
-                                }],
-                                yAxes: [{
-                                    display: true,
-                                    stacked: true,
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'Häufigkeit des Begriffs'
-                                    },
-                                    ticks: {
-                                        beginAtZero: true,
-                                    }
-                                }, {
-                                    id: 'invoice-amount',
-                                    display: false,
-                                    stacked: false,
-                                    scaleLabel: {
-                                        display: false,
-                                        labelString: 'Häufigkeit des Begriffs'
-                                    },
-                                    ticks: {
-                                        beginAtZero: true,
-                                    }
-                                }]
-                            },
-                        }
-                    };
-                    var chart = new Chart($('#myChart'), chartDefault);
-            
-            */
-
-
-
-
-        </script>
+    -->
+    <div class="px-5 mt-3">
+        <h1> Häufigkeitsanalyse innerhalb der Verordnungen</h1>
+        <p class="text-justify">
+        <h2> Technisches Vorgehen </h2>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+        sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
     </div>
+    <div div class="px-5" style="width:100vw;">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="px-5 mt-3">
+        <p class="text-justify">
+        <h2>Erklärung der Verordnungstypen</h2>
+        <h3>Corona-Schutz-Verordnung</h3>
+
+        <b>auch: Verordnung zum Schutz vor Neuinfizierungen mit dem Coronavirus SARS-CoV-2</b>
+        <br>
+        <br>
+        Die Coronaschutzverordnung regelt alles, was die Bürger von NRW als Privatperson, Arbeitgeber und Arbeitnehmer
+        oder Auszubildenden betrifft. Sie sind deshalb sehr umfangreich und voller Verbote, die das öffentliche und
+        private Leben betreffen. Sie ahndet Ordnungswidrigkeiten mit einer Geldbuße von bis zu 25.000 Euro. Die erste
+        Coronaschutzverordnung vom 20.März 2020, die nicht mehr in Kraft ist, sah nicht nur Ordnungswidrigkeiten vor,
+        sondern auch Straftatbestände, die mit Freiheitsstrafen bis zu fünf Jahren verfolgt werden sollten.
+        <br>
+        <br>
+        <p class="px-4">
+            Verhaltenspflichten im öffentlichen Raum und das Zusammentreffen von Personengruppen einschließlich
+            Gottesdienste.
+            Abstandsgebot und die Pflicht zur Mund-Nase-Bedeckung.
+            Schutz von Arbeitnehmern in Betrieben und die Ermöglichung von Heimarbeit.
+            Besuchsregelungen sowie Hygiene- und Infektionschutzkonzepte für stationäre Gesundheits- und
+            Pflegeeinrichtungen.
+            Schutzmaßnahmen für den Betrieb von Hochschulen und Bibliotheken, von außerschulischen Bildungseinrichtungen
+            (z.B. Musikschulen). Schutzmaßnahmen für Musik- und Theaterproben.
+            Verbot von Festivals und Aufführungen in geschlossenen Räumen, Schließung der Kinos.
+            Verbot des nicht-kontaktfreien Sports, inklusive Training, Sportfesten und Wettkämpfen.
+            Verbot des Betriebs von Freizeit- und Vergnügungsstätten.
+            Schutzmaßnahmen für den Handel.
+            Schließung von Messen.
+            Verbot aller Handwerker- und Dienstleistungen, bei denen der Abstand 1,5 Meter nicht eingehalten werden
+            kann.
+            Verbot sämtlicher Feste, Regelungen zur Teilnahme an Hochzeiten und Beerdigungen.
+            Schließung der Gastronomie mit Ausnahme der Betriebskantinen. Schließung der Hochschulmensen.
+            Berherberungsverbot.
+        </p>
+        <br>
+        <h3>Corona-Betreuungs-Verordnung</h3>
+
+        Die Coronabetreuungsverordnung betrifft die Menschen, die schulische oder vorschulische Bildungseinrichtungen
+        besuchen und somit auch alle Kinder außer Babys ohne besonderen Pflegebedarf. Außerdem sind alle Menschen
+        betroffen, die tagsüber oder nachts in einer Einrichtung betreut werden oder sich in Rehabilitation oder einer
+        Eingliederungshilfe befinden. Es handelt sich um Schutzbefohlene.
+        Interessanterweise ist in der Coronabetreuungsverordnung auch der Erhalt der kritischen Infrastruktur geregelt.
+        Hier wird von der Landesregierung sozusagen die Betreuung der gesamten Bevölkerung angestrebt.
+        <br>
+        <br>
+        <p class="px-4">
+            Schließung der Schulen, mit Ausnahme der Notbetreuung
+            Schließung der Einrichtungen für Vorschulkinder, mit Ausnahme der Notbetreuung
+            Schließung der Tages- und Nachtpflegeeinrichtungen, tagesstrukturierende Einrichtungen der
+            Eingliederungshilfe,
+            Einrichtungen der beruflichen Rehabilitation, mit Ausnahmen besonderer Bedarfe von Menschen mit Behinderung
+            /
+            schutzbedürftigen Personen
+            Sicherung der kritischen Infrastruktur der Bereiche: Energie, Wasser & Entsorgung, Ernährung & Hygiene,
+            Informationstechnik und Telekommunikation, Gesundheit, Finanz- und Wirtschaftswesen, Transport und Verkehr,
+            Medien, staatliche Verwaltung, Schulen, Kinder- und Jugendhilfe, Behindertenhilfe (bzgl. Menschen mit
+            Behinderungen)
+        </p>
+
+        <br>
+        <h3>Corona-Aufnahme-Verordnung</h3>
+
+        Die Coronaaufnahmeverordnung regelt die Neu- und Wiederaufnahme von Patienten oder Pflegebedürftigen in
+        Krankenhäuser und stationäre Pflegeeinrichtungen. Sie fordert außerdem die Kreise und kreisfreien Städte auf,
+        für zusätzliche Unterbringungsmöglichkeiten zu sorgen, falls die Kapazitäten für isolierte Unterbringung
+        erschöpft sind.
+       
+        <br>
+        <br>
+        <p class="px-4">
+            Testung der aufzunehmenden Person und prioritäre Analyse des Tests
+            Einrichtung von Isolations- und Quarantänebereichen
+            Bereitstellung von Schutzausrüstung
+            isolierte Unterbringung bis zum Vorliegen des negativen Testergebnisses
+            Kreise und kreisfreie Städte sollen zusätzliche Unterbringungsmöglichkeiten für isolierte Personen schaffen,
+            für
+            die die Kapazitäten in den Einrichtungen nicht mehr ausreichen oder deren Versorgung in der eigenen
+            Häuslichkeit
+            nicht mehr gewährleistet werden kann.
+        </p>
+        <br>
+        <h3>Ausbildungsgewährleistungsverordnung Feuerwehr
+        </h3>
+
+        Sie regelt die Gestaltung und Durchführung der jeweiligen Ausbildungsabschnitte des feuerwehrtechnischen
+        Dienstes im Land Nordrhein-Westfalen sowie die Durchführung von Prüfungen im Rahmen einer Videokonferenz .
+
+        <br>
+        <br>
+        <h3>Corona-Einreise-Verordnung</h3>
+
+
+        Die Coronaeinreiseverordnung schreibt eine häusliche Quarantäte vor, für alle, die nach NRW aus dem Ausland
+        einreisen. Sie sieht Ausnahmen vor. Betroffen sind Reiserückkehrer und Einreisende. Es sind bei Verstößen
+        Bußgelder vorgesehen.
+        <br>
+        <br>
+        <p class="px-4">
+            Wer nach NRW einreist und zuvor mehr als 72 h im Ausland war, muss sich zu Hause in eine 14-tägige
+            Quarantäne
+            begeben. In dieser Zeit darf kein Besuch ausserhalb des eigenen Hausstands empfangen werden
+            Ausnahmeregelungen: triftige Reisegründe, Dienstregelungen
+            Regelungen zum ‚Freitesten‘
+        </p>
+
+        <h3>Corona-Epidemie-Hochschulverordnung</h3>
+
+        Die Coronaepidemiehochschulverordnung soll die Funktionsfähigkeit der Hochschulen sicherstellen.
+        Betroffen sind die Studierenden und Mitarbeiter:innen der Hochschulen in NRW, sowie Studienbewerber:innen.
+        <br> <br>
+        <p class="px-4">
+        Verschiebung von Wahlen von Gremien der Hochschule und der Studierendenschaft
+        Gremiensitzungen und Beschlüsse in elektronischer Kommunikation ermöglichen
+        Online-Prüfungen
+       
+        <b>Online-Lehre</b>
+        Befreiung von der Immatrikulationspflicht im letzten Prüfungssemester bei sozialer Notlage
+        Prüfungen, die erstmals abgelegt und nicht bestanden werden, gelten als nicht unternommen, es sei denn,
+        Regelungen des Rektorats sehen anderes vor.
+        Erleichterung der Anerkennung von Prüfungsleistungen
+        Verlängerung der Regelstudienzeiten
+        Erleichterte Einschreibung in Master-Studiengänge
+
+        </p>
+        <br>
+        <h3>Verordnung zur Änderung der Berfufsordnung für Hebammen und Entbindungspfleger</h3>
+
+        Die Fortbildungspflicht für Hebammen und Entbindungspfleger ruht 2020
+        <br>
+        <br>
+
+        <h3>Corona-Regional-Verordnung</h3>
+
+        Die Coronaregionalverordnung gilt für die Einwohner eines Kreises oder einer kreisfreien Stadt, wenn mehr als 50
+        Neuinfektionen mit dem Coronavirus SARS-CoV-2 je 100.000 Einwohner innerhalb einer Woche auftreten. Die
+        Zusammenkünfte und Aktivitäten im öffentlichen Raum können dann noch stärker eingeschränkt werden, als es die
+        Coronaschutzverordnung bereits vorsieht.
+        <br>
+        <br>
+        <p class="px-4">
+        Begrenzung auf 2 Personen, die im öffentlichen Raum zusammentreffen, es sei denn es liegt ein gemeinsamer
+        Haushalt, Ehe, Lebenspartner- oder gefährtenschaft vor oder es handelt sich um Geschwister, Verwandte in gerader
+        Linie, minderjährige und unterstützungsbedürftige Personen oder notwendige Zusammenkünfte aus
+        betreuungsrelevanten Gründen zusätzlich zur Coronaschutzverordnung noch weitere Verbote, wie z.B. Kontaktsportarten im Freien, Grillen und
+        Picknicken.
+        </p>
+       
+        <br>
+        <h3>Corona-Fleischwirtschaft-Verordnung</h3>
+
+        Weitere Infektionsgeschehen in Großbetrieben der Fleischwirtschaft sollen durch die
+        Coronafleischwirtschaftverordnung vermieden werden.
+        Es gibt umfangreiche Ausnahmeregelungen. So gelten die Pflichten wenn höchstens 20 % der Belegschaft in
+        Gemeinschaftsunterkünften lebt, die Temperatur mindestens 10 Grad Celsius beträgt, 40-60 % Luftfeuchtigkeit
+        herrscht, die Produktionsbereiche zu mehr als 50% mit Frischluft belüftet werden und der Mindestabstand von 1,5
+        Metern eingehalten wird. Es wird in der Verordnung ferner explizit die Möglichkeit eingeräumt, weitere Ausnahmen
+        zuzulassen.
+        <br>
+        <br>
+        <p class="px-4">
+        Es dürfen nur symptomfreie Arbeiter eingesetzt werden
+        Es müssen 2x pro Woche Tests (PCR) durchgeführt werden / Poolverfahren gestattet
+        Testergebnisse müssen wöchentlich an das Landesinstitut für Arbeitsgestaltung des Landes NRW übermittelt werden
+        Aufklärung der Beschäftigten in ihrer Muttersprache über Pflicht zur Arbeitsniederlegung und Recht auf
+        Lohnfortzahlung bei Erkältungssymptomen, sowie über Hygienemaßnahmen und Verwendung / Tragedauer von
+        Mund-Nase-Bedeckungen
+        </p>
+      
+        <br>
+        <h3>Hochschul-Befristungsdauer-Verlängerungsverordnung</h3>
+        Die zulässige Befristungsdauer der Arbeitsverträge von Juniorprofessor:innen, akademischen Rät:innen und
+        akademischen Oberrät:innen verlängert sich um 6 Monate.
+        <br>  <br>
+        <h3>Quarantäneverordnung</h3>
+        Sie gilt für Personen, die einen positiven PCR-Test haben oder die sich wegen Erkältungssymptomen oder einem
+        positiven Schnelltest einem PCR-Test unterzogen haben und auf das Ergebnis warten. Sie gilt zudem für
+        Haushaltsanghörige und andere Kontaktpersonen der positiv getesteten Person.
+        <br>
+        <br>
+        <p class="px-4">
+        Sich zu Hause absondern (von Haushaltsangehörigen fernhalten)
+        bei nicht vermeidbarem Kontakt eine Maske tragen
+        keinen Besuch empfangen
+        Aufenthalt auf selbstgenutztem Balkon, Garten, Terrasse erlaubt
+        Befolgen des Hinweisblattes des Robert Koch-Instituts „Häusliche Isolierung bei bestätigter Covid 19-Infektion“
+        Haushaltsangehörige, die in den vergangenen 10 Tagen Kontakt zur unter Quarantäne stehenden Personen hatten,
+        begeben sich ebenfalls in Quarantäne.
+        10 Tage nach Testung des Primärfalles kann der Haushaltsangehörige sich freitesten
+        Über andere Kontaktpersonen entscheidet das Gesundheitsamt
+        Postiv Getestete sind verpflichtet, ihre Kontaktpersonen (länger als 15 Minuten, weniger als 1,5 m zu
+        informieren)<br>
+        Ausnahmen für Personal kritischer Infrastrukturen
+        </p>
+    </div>
+    <div class="px-5 mt-3">
+        <h1>Google Trends Analyse</h1>
+
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <br>
+            <br>
+            <b>Hinweis: </b>Die Zahlen in Google Trends sind keine konkrete Anzahl von Suchanfragen. Die Zahlen stellen
+            das Suchinteresse relativ zum höchsten Punkt im Diagramm für die jeweilige Region (Deutschland) git und Zeit
+            dar. Ein Wert von
+            100 ist die höchste Popularität für den Begriff. Ein Wert von 50 bedeutet, dass der Begriff halb so populär
+            ist. Ein Wert von 0 bedeutet, dass es nicht genügend Daten für diesen Begriff gab.
+
+        </p>
+    </div>
+    <div div class="px-5" style="width:100vw">
+        <canvas id="test-line-chart"></canvas>
+    </div>
+    <!--
+    <div>
+        <canvas div class="px-5" id="test-term-chart" width="200em"></canvas>
+    </div>
+    -->
+    <div class="px-5 mt-3">
+        <h1>TL;DR</h1>
+
+        <p class="text-justify">
+            Team: Max, Nina, Valeria, Anne
+        </p>
+    </div>
+
+
+
+    <script>
+
+        window.onload = function () {
+            linechart_js.get_data();
+            tabelle_term.get_data();
+        };
+        /*
+        $(document).on("click", "#button", function (evt) {
+            tabelle_js.get_data();
+        });
+
+        $(document).on("click", "#linechart_button", function (evt) {
+            linechart_js.get_data();
+        });
+        $(document).on("click", "#termchart_button", function (evt) {
+            tabelle_term.get_data();
+        });
+*/
+    </script>
+
 </body>
 
 </html>

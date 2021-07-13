@@ -51,65 +51,93 @@
         var datasets = [];
 
         datasets[0] = {
+          
             label: "covid",
             data: [],
-            borderColor: "#c45850",
+            borderColor: "rgba(255, 203, 242,  0.7)",
+            backgroundColor:  "rgba(255, 203, 242,  0.7)",
             fill: false
+            
         }
 
         datasets[1] = {
+          
             label: "Schnelltest",
             data: [],
-            borderColor: "yellow",
+            borderColor: "rgba(75, 192, 192, 0.4",
+            backgroundColor: "rgba(75, 192, 192, 0.4",
             fill: false
         }
         datasets[2] = {
+           
             label: "Betreuung",
             data: [],
-            borderColor: "#8e5ea2",
-            fill: false
+            borderColor: "rgba(236, 188, 253,  0.4)",
+            backgroundColor: "rgba(236, 188, 253,  0.4)",
+            fill: false,
+            hidden: true
         }
         datasets[3] = {
+           
             label: "Behörde",
             data: [],
-            borderColor: "#e8c3b9",
-            fill: false
+            borderColor: "rgba(25, 175, 145, 0.4)",
+            backgroundColor: "rgba(25, 175, 145, 0.4)",
+            fill: false,
+            hidden: true
         }
         datasets[4] = {
+            
             label: "Einrichtung",
             data: [],
-            borderColor: "blue",
-            fill: false
+            borderColor: "rgba(226, 175, 255,  0.4)",
+            backgroundColor: "rgba(226, 175, 255,  0.4)",
+            fill: false,
+            hidden: true
         }
         datasets[5] = {
+         
             label: "Hygiene",
             data: [],
-            borderColor: "grey",
+            borderColor: "rgba(216, 187, 255,  0.4)",
+            backgroundColor: "rgba(216, 187, 255,  0.4)",
             fill: false
         }
         datasets[6] = {
+         
             label: "Infektionsschutzgesetz",
             data: [],
-            borderColor: "lightblue",
-            fill: false
+            borderColor: "rgba(208, 209, 255,  0.4)",
+            backgroundColor: "rgba(208, 209, 255,  0.4)",
+            fill: false,
+            hidden: true
         }
         datasets[7] = {
+            
             label: "Personen",
             data: [],
-            borderColor: "lightgreen",
-            fill: false
+            borderColor: "rgba(200, 231, 255,  0.7)",
+            backgroundColor: "rgba(200, 231, 255,  0.7)",
+            fill: false,
+            hidden: true
         }
         datasets[8] = {
+         
             label: "Sektor",
             data: [],
-            borderColor: "lightgrey",
-            fill: false
+            borderColor: "rgba(54, 162, 235, 0.4)",
+            backgroundColor: "rgba(54, 162, 235, 0.4)",
+            fill: false,
+            hidden: true
         }
         datasets[9] = {
+          
             label: "Vermeidung",
             data: [],
-            borderColor: "darkred",
-            fill: false
+            borderColor: "rgb(153, 102, 255, 0.3)",
+            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            fill: false,
+            hidden: true
         }
 
         for (var i = 0; i < google_records.length; i++) {
@@ -138,17 +166,31 @@
 
         var cconfig = {
             type: 'line',
+
             data: {
                 labels: xlabels,
                 datasets: datasets
             },
             options: {
                 // Äußeres Gerüst
+           
                 responsive: true,
                 title: {
                     display: true,
                     text: "Google Trends"
                 },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                      
+                    },
+                    y: {
+                        beginAtZero: true,
+                       
+
+                       
+                    }
+                }
                 // Darstellung Mouse Hoover über Säulen (Bars)
 
 
