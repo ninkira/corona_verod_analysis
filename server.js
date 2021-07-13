@@ -73,7 +73,12 @@ app.get("/csv", function (req, res) {
 });
 
 app.get("/google_data", function (req, res) {
-    var filename = path.join(__dirname, "google_begriffe.json");
+
+
+    var filename = path.join(__dirname, "static");
+    filename = path.join(filename, "data");
+    filename = path.join(filename, "google_begriffe.json");
+    // var filename = path.join(__dirname, "google_begriffe.json");
     var google_records = [];
 
     fs.readFile(filename, 'utf8', (err, jsonString) => {
