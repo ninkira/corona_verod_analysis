@@ -26,337 +26,489 @@
     <link href="css/proj.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light" data-spy='scroll' data-target='.navbar' data-offset='50'>
 
 
-    <nav class="px-5 navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
+
+
+
+
+
+    <nav id="navbar-example3" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#top">Sprache der Coronaverordnung</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#item-1">Häufigkeitsanalyse innerhalb der Verordnungen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#item-2">Google Trends Analyse</a>
+            </li>
+            <a class="nav-link" href="https://github.com/ninkira/corona_verod_analysis" style="color:#00BFFF;"> GitHub
+            </a>
+        </ul>
     </nav>
 
-    <!--
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Sprache der Coronaverordnung</a>
-    </nav>
+    <div class="mx-5 px-5 mt-3 bg-white shadow-sm p-3 bg-body rounded">
+        <h1 class="display-1">Einleitung</h1>
 
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
+        <div class="mt-3">
+            <p class="text-justify">
+            <h3 class="display-4">Zum Forschungsgegenstand</h3>
+            <hr>
 
-                            <h6
-                                class="sidebar-heading d-flex justify-content-between align-items-center px-2 mt-4 mb-2 text-muted">
-                                <span>Waehlen Sie zwei Begriffe</span>
-                            </h6>
 
-                            <span>Google Trends Begriffe </span>
-                            <select class="form-select px-3 mt-4 mb-1">
-                                <option selected>Begriff 1</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <span>Verordnungen</span>
-                            <select class="form-select px-3 mt-4 mb-1">
-                                <option selected>Begriff 2</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <select class="form-select px-3 mt-4 mb-1">
-                                <option selected>Begriff 3</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                      
+            Untersuchungsgegenstand dieses Projektes sind die im Laufe der COVID-19-Pandemie erlassenen Verordnungen,
+            die seit Ausbruch der Pandemie in Deutschland im März 2020 und zum Teil bis heute Lebensalltag und
+            -wirklichkeit der Menschen in NRW und in anderen Bundesländern maßgeblich bestimmen.
+            Im engeren Sinne beschäftigt sich dieses Projekt nur mit den Verordnungen im Wortsinne. Es existieren
+            daneben auch Erlasse, Allgemeinverfügungen und Gesetze (z.B. auf Bundesebene das Infektionsschutzgesetz),
+            aufgrund des begrenzten Projektzeitraums wurden aber nur die [text link with title]
+            (https://de.wikipedia.org/wiki/Liste_der_infolge_der_COVID-19-Pandemie_erlassenen_deutschen_Gesetze_und_Verordnungen#Verordnungen_10
+            "Verordnungen auf Ebene des Landes NRW") berücksichtigt.
 
-                        </li>
-                    </ul>
+            <br><br>
+            Im Folgenden präsentieren wir Euch unsere Analyseergebnisse inform einer Häufigkeitsanalyse und Visualisierung von Google Trends.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+        <div id="item-1" style="padding-top:70px;padding-bottom:35px">
+
+            <div class="mx-5 px-5 bg-white shadow-sm p-3 bg-body rounded">
+                <div class="pb-2">
+
+                    <h1 class="display-1"> Häufigkeitsanalyse innerhalb der Verordnungen</h1>
+
                 </div>
-            </nav>
+                <p class="text-justify">
+                <h2 class="display-6"> Technisches Vorgehen </h2>
+                <hr>
+
+                Die schiere Zahl der Verordnungen (um die 100 Verordnungen und Änderungsverordnungen allein zwischen
+                März 2020 und März 2021) macht eine maschinelle (und idealerweise möglichst algorithmisierte)
+                Verarbeitung der Texte unerlässlich.
+
+                Erstens werden alle Verordnungstexte aus den veröffentlichten Dokumenten (entweder als PDF-Dokument oder
+                in „reiner Textform“ als Webinhalt) pro Verordnung in jeweils einer Datei im txt-Format gespeichert.
+
+                Um die sprachlichen Daten aus den Textdaten maschinell zu extrahieren, müssen zuvor aber einige
+                Vorverarbeitungsschritte durchgeführt werden:
+
+                * Die Texte verfügen, wenn sie aus den PDF-Dokumenten extrahiert werden, über Silbentrennung am
+                Zeilenende. Um zu verhindern, dass in den nächsten Schritten solche Silben in der darauffolgenden Zeile
+                wie Einzelwörter behandelt werden, müssen alle diese Wörter wieder zusammengeführt werden. In unserem
+                Fall haben wir das mit einem regulären Ausdruck gelöst.
+
+                * Bestimmte Begriffe, wie z.B. den Namen der Ministerin, die diese Verordnung herausgebracht hat, werden
+                spaced dargestellt ( M i n i s t e r i n ), dies wurde durch die reguläre Schreibweise (Ministerin)
+                ersetzt.
+
+                Anschließend werden die Texte mit einem Sprachverarbeitungsalgorithmus analyisiert. Hier wurde die
+                NLP-Bibliothek [text link with title] (https://spacy.io/usage/spacy-101#whats-spacy "spaCy") verwendet,
+                das auch über ein Python-Package verfügt, das innerhalb einer Python-Distribution funktioniert. SpaCy
+                ist Open Source und verfügt über ein vergleichsweise großes Sprachmodell (auch fürs Deutsche), sodass
+                auch deutschsprachige Texte angemessen untersucht werden können.
+                _Anmerkung_: NLTK hat ebenfalls die Funktionen, die man für das Auslesen der Verordnungen benötigt, ist
+                aber primär auf englischsprachige Inhalte ausgelegt und funktioniert für andere Sprachen nicht so gut.
+                <br><br>
+                <h3> 1. Text einlesen </h3>
+
+                Zunächst wird der Verordnungstext eingelesen und mit dem von SpaCy mitgelieferten Tokenizer in Tokens
+                zerlegt.
+                SpaCy bietet die Möglichkeiten, verschiedene zusätzliche Pipelines zu integrieren, welche weitere
+                Funktionen ermöglichen. Hier haben wir einen Lemmatizer und einen Named-Entity-Merger hinzugefügt.
+                <br><br>
+                <h3> 2. Den lemmatisierten Verordnungstext in eine Liste schreiben und ein Dictionary mit dem wordCount
+                    anlegen </h3>
+
+                Da die spaCy-Programmlogik nicht direkt auf Inhalte eines Dateiobjektes zugreifen kann, wird in einem
+                Zwischenschritt Folgendes getan:
+
+                * Über die Datei des Verordnungstextes iterieren und deren Lemmata in einer Liste speichern
+                * Ein Dictionary anlegen. Dabei sind die Lemmata die Keys und die Häufigkeitswerte innerhalb des
+                Dokumentes die Values.
+                * Eine zweite Liste anlegen, in der die Wörter mitsamt der zugehörigen POS-Tags gespeichert werden
+                (hilfreich im weiteren Verlauf, um z.B. Satzzeichen herauszufiltern)
+
+                <br><br>
+                <h3> 3. Das Dictionary in ein Pandas-Dataframe überführen </h3>
+
+                Um aus diesem Dictionary ein mit pandas manipulierbares Dataframe-Objekt zu generieren, werden die
+                einzelnen Listen dieses Dictionaries zu einem Dataframe „gezipped“. Dadurch entsteht eine Tabelle mit
+                drei Spalten, in denen das POS-Tag, die Worthäufigkeit und das Lemma des Wortes enthalten sind.
+                <br><br>
+                <h3> 4. Das Dataframe filtern </h3>
+
+                Um nur noch solche Lemmata im Dataframe zu behalten, die für die linguistische Analyse relevant sind,
+                werden nach und nach bestimmte Elemente „gedropped“.
+
+                * Satz-, Sonder- und Leerzeichen (also z.B. POS-Tags SPACE oder PUNCT oder Symbole wie ‚§‘)
+                * Stopp- und Funktionswörter (wie ‚und‘, ‚der‘, ‚obwohl‘, etc.)
+
+                Die Stoppwörter werden durch eine eingelesene externe Textdatei definiert. Es wird über das Dataframe
+                iteriert, wobei alle Wörter, die ebenfalls auf der Stoppwortliste stehen, entfernt werden.
+                Das so entstandene neue Dataframe kann nun exportiert werden, z.B. als CSV-Datei.
+                <br><br>
+                <h3> 5. Linguistische Analyse </h3>
+
+                Die CSV-Datei wird nun in Augenschein genommen, um zu überprüfen, welcher Begriff am häufigsten
+                vorkommt. Da die Verordnungsdateien nicht besonders groß sind, lässt sich über eine bloße
+                Inaugenscheinnahme bereits erkennen, ob die ermittelten Häufigkeitswerte plausibel sind (oder aber das
+                Wort ‚Coronavirus‘ nur deswegen 3 Mal vorkommt, weil es in einer Überschrift auftaucht).
+                Um diese Häufigkeitswerte in der Visualisierung anzuzeigen, wird als Datei-Einlese-Format JSON
+                verwendet.
+                _Anmerkung_: Eine automatisierte JSON-Erstellung (z.B. indem eine Methode geschrieben wird, die
+                automatisch die drei Begriffe mit dem höchsten Häufigkeitswert in die JSON-Datei schreibt) ist bei den
+                meisten CSV-Dateien nicht zielführend, weil in einigen Fällen die häufigsten Begriffe trotzdem
+                „Pseudo-Stoppwörter“ sind, die zwar nicht auf der Liste stehen, aber keine echte Funktion haben
+                (Numerale wie ‚2‘ oder ‚3‘, die oft nur Nummerierungen sind; Abgrenzung zu ‚echten‘ Begriffen wie ‚1,5
+                [Meter]‘).
+                </p>
+
+                <div class="mt-3 bg-white shadow-sm p-3 mb-5 bg-body rounded" style="width:100%;">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <h1 class=" display-4">Erklärung der Verordnungstypen</h1>
+                <hr>
+                <div>
+                    <p class="text-justify">
+
+
+
+
+                    <h3>Corona-Schutz-Verordnung</h3>
+
+                    <b>auch: Verordnung zum Schutz vor Neuinfizierungen mit dem Coronavirus SARS-CoV-2</b>
+                    <br>
+                    <br>
+                    Die Coronaschutzverordnung regelt alles, was die Bürger von NRW als Privatperson, Arbeitgeber und
+                    Arbeitnehmer
+                    oder Auszubildenden betrifft. Sie sind deshalb sehr umfangreich und voller Verbote, die das
+                    öffentliche und
+                    private Leben betreffen. Sie ahndet Ordnungswidrigkeiten mit einer Geldbuße von bis zu 25.000 Euro.
+                    Die
+                    erste
+                    Coronaschutzverordnung vom 20.März 2020, die nicht mehr in Kraft ist, sah nicht nur
+                    Ordnungswidrigkeiten
+                    vor,
+                    sondern auch Straftatbestände, die mit Freiheitsstrafen bis zu fünf Jahren verfolgt werden sollten.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Verhaltenspflichten im öffentlichen Raum und das Zusammentreffen von Personengruppen
+                        einschließlich
+                        Gottesdienste.
+                        Abstandsgebot und die Pflicht zur Mund-Nase-Bedeckung.
+                        Schutz von Arbeitnehmern in Betrieben und die Ermöglichung von Heimarbeit.
+                        Besuchsregelungen sowie Hygiene- und Infektionschutzkonzepte für stationäre Gesundheits- und
+                        Pflegeeinrichtungen.
+                        Schutzmaßnahmen für den Betrieb von Hochschulen und Bibliotheken, von außerschulischen
+                        Bildungseinrichtungen
+                        (z.B. Musikschulen). Schutzmaßnahmen für Musik- und Theaterproben.
+                        Verbot von Festivals und Aufführungen in geschlossenen Räumen, Schließung der Kinos.
+                        Verbot des nicht-kontaktfreien Sports, inklusive Training, Sportfesten und Wettkämpfen.
+                        Verbot des Betriebs von Freizeit- und Vergnügungsstätten.
+                        Schutzmaßnahmen für den Handel.
+                        Schließung von Messen.
+                        Verbot aller Handwerker- und Dienstleistungen, bei denen der Abstand 1,5 Meter nicht eingehalten
+                        werden
+                        kann.
+                        Verbot sämtlicher Feste, Regelungen zur Teilnahme an Hochzeiten und Beerdigungen.
+                        Schließung der Gastronomie mit Ausnahme der Betriebskantinen. Schließung der Hochschulmensen.
+                        Berherberungsverbot.
+                    </p>
+                    <br>
+                    <h3>Corona-Betreuungs-Verordnung</h3>
+
+                    Die Coronabetreuungsverordnung betrifft die Menschen, die schulische oder vorschulische
+                    Bildungseinrichtungen
+                    besuchen und somit auch alle Kinder außer Babys ohne besonderen Pflegebedarf. Außerdem sind alle
+                    Menschen
+                    betroffen, die tagsüber oder nachts in einer Einrichtung betreut werden oder sich in Rehabilitation
+                    oder
+                    einer
+                    Eingliederungshilfe befinden. Es handelt sich um Schutzbefohlene.
+                    Interessanterweise ist in der Coronabetreuungsverordnung auch der Erhalt der kritischen
+                    Infrastruktur
+                    geregelt.
+                    Hier wird von der Landesregierung sozusagen die Betreuung der gesamten Bevölkerung angestrebt.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Schließung der Schulen, mit Ausnahme der Notbetreuung
+                        Schließung der Einrichtungen für Vorschulkinder, mit Ausnahme der Notbetreuung
+                        Schließung der Tages- und Nachtpflegeeinrichtungen, tagesstrukturierende Einrichtungen der
+                        Eingliederungshilfe,
+                        Einrichtungen der beruflichen Rehabilitation, mit Ausnahmen besonderer Bedarfe von Menschen mit
+                        Behinderung
+                        /
+                        schutzbedürftigen Personen
+                        Sicherung der kritischen Infrastruktur der Bereiche: Energie, Wasser & Entsorgung, Ernährung &
+                        Hygiene,
+                        Informationstechnik und Telekommunikation, Gesundheit, Finanz- und Wirtschaftswesen, Transport
+                        und
+                        Verkehr,
+                        Medien, staatliche Verwaltung, Schulen, Kinder- und Jugendhilfe, Behindertenhilfe (bzgl.
+                        Menschen mit
+                        Behinderungen)
+                    </p>
+
+                    <br>
+                    <h3>Corona-Aufnahme-Verordnung</h3>
+
+                    Die Coronaaufnahmeverordnung regelt die Neu- und Wiederaufnahme von Patienten oder Pflegebedürftigen
+                    in
+                    Krankenhäuser und stationäre Pflegeeinrichtungen. Sie fordert außerdem die Kreise und kreisfreien
+                    Städte
+                    auf,
+                    für zusätzliche Unterbringungsmöglichkeiten zu sorgen, falls die Kapazitäten für isolierte
+                    Unterbringung
+                    erschöpft sind.
+
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Testung der aufzunehmenden Person und prioritäre Analyse des Tests
+                        Einrichtung von Isolations- und Quarantänebereichen
+                        Bereitstellung von Schutzausrüstung
+                        isolierte Unterbringung bis zum Vorliegen des negativen Testergebnisses
+                        Kreise und kreisfreie Städte sollen zusätzliche Unterbringungsmöglichkeiten für isolierte
+                        Personen
+                        schaffen,
+                        für
+                        die die Kapazitäten in den Einrichtungen nicht mehr ausreichen oder deren Versorgung in der
+                        eigenen
+                        Häuslichkeit
+                        nicht mehr gewährleistet werden kann.
+                    </p>
+                    <br>
+                    <h3>Ausbildungsgewährleistungsverordnung Feuerwehr
+                    </h3>
+
+                    Sie regelt die Gestaltung und Durchführung der jeweiligen Ausbildungsabschnitte des
+                    feuerwehrtechnischen
+                    Dienstes im Land Nordrhein-Westfalen sowie die Durchführung von Prüfungen im Rahmen einer
+                    Videokonferenz .
+
+                    <br>
+                    <br>
+                    <h3>Corona-Einreise-Verordnung</h3>
+
+
+                    Die Coronaeinreiseverordnung schreibt eine häusliche Quarantäte vor, für alle, die nach NRW aus dem
+                    Ausland
+                    einreisen. Sie sieht Ausnahmen vor. Betroffen sind Reiserückkehrer und Einreisende. Es sind bei
+                    Verstößen
+                    Bußgelder vorgesehen.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Wer nach NRW einreist und zuvor mehr als 72 h im Ausland war, muss sich zu Hause in eine
+                        14-tägige
+                        Quarantäne
+                        begeben. In dieser Zeit darf kein Besuch ausserhalb des eigenen Hausstands empfangen werden
+                        Ausnahmeregelungen: triftige Reisegründe, Dienstregelungen
+                        Regelungen zum ‚Freitesten‘
+                    </p>
+
+                    <h3>Corona-Epidemie-Hochschulverordnung</h3>
+
+                    Die Coronaepidemiehochschulverordnung soll die Funktionsfähigkeit der Hochschulen sicherstellen.
+                    Betroffen sind die Studierenden und Mitarbeiter:innen der Hochschulen in NRW, sowie
+                    Studienbewerber:innen.
+                    <br> <br>
+                    <p class="px-4">
+                        Verschiebung von Wahlen von Gremien der Hochschule und der Studierendenschaft
+                        Gremiensitzungen und Beschlüsse in elektronischer Kommunikation ermöglichen
+                        Online-Prüfungen
+
+                        <b>Online-Lehre</b>
+                        Befreiung von der Immatrikulationspflicht im letzten Prüfungssemester bei sozialer Notlage
+                        Prüfungen, die erstmals abgelegt und nicht bestanden werden, gelten als nicht unternommen, es
+                        sei denn,
+                        Regelungen des Rektorats sehen anderes vor.
+                        Erleichterung der Anerkennung von Prüfungsleistungen
+                        Verlängerung der Regelstudienzeiten
+                        Erleichterte Einschreibung in Master-Studiengänge
+
+                    </p>
+                    <br>
+                    <h3>Verordnung zur Änderung der Berfufsordnung für Hebammen und Entbindungspfleger</h3>
+
+                    Die Fortbildungspflicht für Hebammen und Entbindungspfleger ruht 2020
+                    <br>
+                    <br>
+
+                    <h3>Corona-Regional-Verordnung</h3>
+
+                    Die Coronaregionalverordnung gilt für die Einwohner eines Kreises oder einer kreisfreien Stadt, wenn
+                    mehr
+                    als 50
+                    Neuinfektionen mit dem Coronavirus SARS-CoV-2 je 100.000 Einwohner innerhalb einer Woche auftreten.
+                    Die
+                    Zusammenkünfte und Aktivitäten im öffentlichen Raum können dann noch stärker eingeschränkt werden,
+                    als es
+                    die
+                    Coronaschutzverordnung bereits vorsieht.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Begrenzung auf 2 Personen, die im öffentlichen Raum zusammentreffen, es sei denn es liegt ein
+                        gemeinsamer
+                        Haushalt, Ehe, Lebenspartner- oder gefährtenschaft vor oder es handelt sich um Geschwister,
+                        Verwandte in
+                        gerader
+                        Linie, minderjährige und unterstützungsbedürftige Personen oder notwendige Zusammenkünfte aus
+                        betreuungsrelevanten Gründen zusätzlich zur Coronaschutzverordnung noch weitere Verbote, wie
+                        z.B.
+                        Kontaktsportarten im Freien, Grillen und
+                        Picknicken.
+                    </p>
+
+                    <br>
+                    <h3>Corona-Fleischwirtschaft-Verordnung</h3>
+
+                    Weitere Infektionsgeschehen in Großbetrieben der Fleischwirtschaft sollen durch die
+                    Coronafleischwirtschaftverordnung vermieden werden.
+                    Es gibt umfangreiche Ausnahmeregelungen. So gelten die Pflichten wenn höchstens 20 % der Belegschaft
+                    in
+                    Gemeinschaftsunterkünften lebt, die Temperatur mindestens 10 Grad Celsius beträgt, 40-60 %
+                    Luftfeuchtigkeit
+                    herrscht, die Produktionsbereiche zu mehr als 50% mit Frischluft belüftet werden und der
+                    Mindestabstand von
+                    1,5
+                    Metern eingehalten wird. Es wird in der Verordnung ferner explizit die Möglichkeit eingeräumt,
+                    weitere
+                    Ausnahmen
+                    zuzulassen.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Es dürfen nur symptomfreie Arbeiter eingesetzt werden
+                        Es müssen 2x pro Woche Tests (PCR) durchgeführt werden / Poolverfahren gestattet
+                        Testergebnisse müssen wöchentlich an das Landesinstitut für Arbeitsgestaltung des Landes NRW
+                        übermittelt
+                        werden
+                        Aufklärung der Beschäftigten in ihrer Muttersprache über Pflicht zur Arbeitsniederlegung und
+                        Recht auf
+                        Lohnfortzahlung bei Erkältungssymptomen, sowie über Hygienemaßnahmen und Verwendung / Tragedauer
+                        von
+                        Mund-Nase-Bedeckungen
+                    </p>
+
+                    <br>
+                    <h3>Hochschul-Befristungsdauer-Verlängerungsverordnung</h3>
+                    Die zulässige Befristungsdauer der Arbeitsverträge von Juniorprofessor:innen, akademischen Rät:innen
+                    und
+                    akademischen Oberrät:innen verlängert sich um 6 Monate.
+                    <br> <br>
+                    <h3>Quarantäneverordnung</h3>
+                    Sie gilt für Personen, die einen positiven PCR-Test haben oder die sich wegen Erkältungssymptomen
+                    oder einem
+                    positiven Schnelltest einem PCR-Test unterzogen haben und auf das Ergebnis warten. Sie gilt zudem
+                    für
+                    Haushaltsanghörige und andere Kontaktpersonen der positiv getesteten Person.
+                    <br>
+                    <br>
+                    <p class="px-4">
+                        Sich zu Hause absondern (von Haushaltsangehörigen fernhalten)
+                        bei nicht vermeidbarem Kontakt eine Maske tragen
+                        keinen Besuch empfangen
+                        Aufenthalt auf selbstgenutztem Balkon, Garten, Terrasse erlaubt
+                        Befolgen des Hinweisblattes des Robert Koch-Instituts „Häusliche Isolierung bei bestätigter
+                        Covid
+                        19-Infektion“
+                        Haushaltsangehörige, die in den vergangenen 10 Tagen Kontakt zur unter Quarantäne stehenden
+                        Personen
+                        hatten,
+                        begeben sich ebenfalls in Quarantäne.
+                        10 Tage nach Testung des Primärfalles kann der Haushaltsangehörige sich freitesten
+                        Über andere Kontaktpersonen entscheidet das Gesundheitsamt
+                        Postiv Getestete sind verpflichtet, ihre Kontaktpersonen (länger als 15 Minuten, weniger als 1,5
+                        m zu
+                        informieren)<br>
+                        Ausnahmen für Personal kritischer Infrastrukturen
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
--->
-    <!--
-    <button id="button" class="px-3 mt-4 mb-1">Normale Grafik anzeigen</button>
-    <button id="linechart_button" class="px-3 mt-4 mb-1">LineChart anzeigen</button>
-    <button id="termchart_button" class="px-3 mt-4 mb-1">TermChart anzeigen</button>
-   <div id="btn_test"></div>
--->
+        <div id="item-2" style="padding-top:70px;padding-bottom:35px">
+            <div class="mx-5 px-5 bg-white shadow-sm p-3 bg-body rounded">
+
+                <h1 class="display-1">Google Trends Analyse</h1>
 
 
-    <!--<div class="main">
-        </div>
-    -->
-    <div class="px-5 mt-3">
-        <h1> Häufigkeitsanalyse innerhalb der Verordnungen</h1>
-        <p class="text-justify">
-        <h2> Technisches Vorgehen </h2>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-        sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-    </div>
-    <div div class="px-5" style="width:100vw;">
-        <canvas id="myChart"></canvas>
-    </div>
-    <div class="px-5 mt-3">
-        <p class="text-justify">
-        <h2>Erklärung der Verordnungstypen</h2>
-        <h3>Corona-Schutz-Verordnung</h3>
+                <div class="mt-3">
 
-        <b>auch: Verordnung zum Schutz vor Neuinfizierungen mit dem Coronavirus SARS-CoV-2</b>
-        <br>
-        <br>
-        Die Coronaschutzverordnung regelt alles, was die Bürger von NRW als Privatperson, Arbeitgeber und Arbeitnehmer
-        oder Auszubildenden betrifft. Sie sind deshalb sehr umfangreich und voller Verbote, die das öffentliche und
-        private Leben betreffen. Sie ahndet Ordnungswidrigkeiten mit einer Geldbuße von bis zu 25.000 Euro. Die erste
-        Coronaschutzverordnung vom 20.März 2020, die nicht mehr in Kraft ist, sah nicht nur Ordnungswidrigkeiten vor,
-        sondern auch Straftatbestände, die mit Freiheitsstrafen bis zu fünf Jahren verfolgt werden sollten.
-        <br>
-        <br>
-        <p class="px-4">
-            Verhaltenspflichten im öffentlichen Raum und das Zusammentreffen von Personengruppen einschließlich
-            Gottesdienste.
-            Abstandsgebot und die Pflicht zur Mund-Nase-Bedeckung.
-            Schutz von Arbeitnehmern in Betrieben und die Ermöglichung von Heimarbeit.
-            Besuchsregelungen sowie Hygiene- und Infektionschutzkonzepte für stationäre Gesundheits- und
-            Pflegeeinrichtungen.
-            Schutzmaßnahmen für den Betrieb von Hochschulen und Bibliotheken, von außerschulischen Bildungseinrichtungen
-            (z.B. Musikschulen). Schutzmaßnahmen für Musik- und Theaterproben.
-            Verbot von Festivals und Aufführungen in geschlossenen Räumen, Schließung der Kinos.
-            Verbot des nicht-kontaktfreien Sports, inklusive Training, Sportfesten und Wettkämpfen.
-            Verbot des Betriebs von Freizeit- und Vergnügungsstätten.
-            Schutzmaßnahmen für den Handel.
-            Schließung von Messen.
-            Verbot aller Handwerker- und Dienstleistungen, bei denen der Abstand 1,5 Meter nicht eingehalten werden
-            kann.
-            Verbot sämtlicher Feste, Regelungen zur Teilnahme an Hochzeiten und Beerdigungen.
-            Schließung der Gastronomie mit Ausnahme der Betriebskantinen. Schließung der Hochschulmensen.
-            Berherberungsverbot.
-        </p>
-        <br>
-        <h3>Corona-Betreuungs-Verordnung</h3>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum.
+                        Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                        sit
+                        amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam
+                        erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren,
+                        no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        <br>
+                        <br>
+                        <b>Hinweis: </b>Die Zahlen in Google Trends sind keine konkrete Anzahl von Suchanfragen. Die
+                        Zahlen
+                        stellen
+                        das Suchinteresse relativ zum höchsten Punkt im Diagramm für die jeweilige Region (Deutschland)
+                        git und
+                        Zeit
+                        dar. Ein Wert von
+                        100 ist die höchste Popularität für den Begriff. Ein Wert von 50 bedeutet, dass der Begriff halb
+                        so
+                        populär
+                        ist. Ein Wert von 0 bedeutet, dass es nicht genügend Daten für diesen Begriff gab.
 
-        Die Coronabetreuungsverordnung betrifft die Menschen, die schulische oder vorschulische Bildungseinrichtungen
-        besuchen und somit auch alle Kinder außer Babys ohne besonderen Pflegebedarf. Außerdem sind alle Menschen
-        betroffen, die tagsüber oder nachts in einer Einrichtung betreut werden oder sich in Rehabilitation oder einer
-        Eingliederungshilfe befinden. Es handelt sich um Schutzbefohlene.
-        Interessanterweise ist in der Coronabetreuungsverordnung auch der Erhalt der kritischen Infrastruktur geregelt.
-        Hier wird von der Landesregierung sozusagen die Betreuung der gesamten Bevölkerung angestrebt.
-        <br>
-        <br>
-        <p class="px-4">
-            Schließung der Schulen, mit Ausnahme der Notbetreuung
-            Schließung der Einrichtungen für Vorschulkinder, mit Ausnahme der Notbetreuung
-            Schließung der Tages- und Nachtpflegeeinrichtungen, tagesstrukturierende Einrichtungen der
-            Eingliederungshilfe,
-            Einrichtungen der beruflichen Rehabilitation, mit Ausnahmen besonderer Bedarfe von Menschen mit Behinderung
-            /
-            schutzbedürftigen Personen
-            Sicherung der kritischen Infrastruktur der Bereiche: Energie, Wasser & Entsorgung, Ernährung & Hygiene,
-            Informationstechnik und Telekommunikation, Gesundheit, Finanz- und Wirtschaftswesen, Transport und Verkehr,
-            Medien, staatliche Verwaltung, Schulen, Kinder- und Jugendhilfe, Behindertenhilfe (bzgl. Menschen mit
-            Behinderungen)
-        </p>
-
-        <br>
-        <h3>Corona-Aufnahme-Verordnung</h3>
-
-        Die Coronaaufnahmeverordnung regelt die Neu- und Wiederaufnahme von Patienten oder Pflegebedürftigen in
-        Krankenhäuser und stationäre Pflegeeinrichtungen. Sie fordert außerdem die Kreise und kreisfreien Städte auf,
-        für zusätzliche Unterbringungsmöglichkeiten zu sorgen, falls die Kapazitäten für isolierte Unterbringung
-        erschöpft sind.
-       
-        <br>
-        <br>
-        <p class="px-4">
-            Testung der aufzunehmenden Person und prioritäre Analyse des Tests
-            Einrichtung von Isolations- und Quarantänebereichen
-            Bereitstellung von Schutzausrüstung
-            isolierte Unterbringung bis zum Vorliegen des negativen Testergebnisses
-            Kreise und kreisfreie Städte sollen zusätzliche Unterbringungsmöglichkeiten für isolierte Personen schaffen,
-            für
-            die die Kapazitäten in den Einrichtungen nicht mehr ausreichen oder deren Versorgung in der eigenen
-            Häuslichkeit
-            nicht mehr gewährleistet werden kann.
-        </p>
-        <br>
-        <h3>Ausbildungsgewährleistungsverordnung Feuerwehr
-        </h3>
-
-        Sie regelt die Gestaltung und Durchführung der jeweiligen Ausbildungsabschnitte des feuerwehrtechnischen
-        Dienstes im Land Nordrhein-Westfalen sowie die Durchführung von Prüfungen im Rahmen einer Videokonferenz .
-
-        <br>
-        <br>
-        <h3>Corona-Einreise-Verordnung</h3>
-
-
-        Die Coronaeinreiseverordnung schreibt eine häusliche Quarantäte vor, für alle, die nach NRW aus dem Ausland
-        einreisen. Sie sieht Ausnahmen vor. Betroffen sind Reiserückkehrer und Einreisende. Es sind bei Verstößen
-        Bußgelder vorgesehen.
-        <br>
-        <br>
-        <p class="px-4">
-            Wer nach NRW einreist und zuvor mehr als 72 h im Ausland war, muss sich zu Hause in eine 14-tägige
-            Quarantäne
-            begeben. In dieser Zeit darf kein Besuch ausserhalb des eigenen Hausstands empfangen werden
-            Ausnahmeregelungen: triftige Reisegründe, Dienstregelungen
-            Regelungen zum ‚Freitesten‘
-        </p>
-
-        <h3>Corona-Epidemie-Hochschulverordnung</h3>
-
-        Die Coronaepidemiehochschulverordnung soll die Funktionsfähigkeit der Hochschulen sicherstellen.
-        Betroffen sind die Studierenden und Mitarbeiter:innen der Hochschulen in NRW, sowie Studienbewerber:innen.
-        <br> <br>
-        <p class="px-4">
-        Verschiebung von Wahlen von Gremien der Hochschule und der Studierendenschaft
-        Gremiensitzungen und Beschlüsse in elektronischer Kommunikation ermöglichen
-        Online-Prüfungen
-       
-        <b>Online-Lehre</b>
-        Befreiung von der Immatrikulationspflicht im letzten Prüfungssemester bei sozialer Notlage
-        Prüfungen, die erstmals abgelegt und nicht bestanden werden, gelten als nicht unternommen, es sei denn,
-        Regelungen des Rektorats sehen anderes vor.
-        Erleichterung der Anerkennung von Prüfungsleistungen
-        Verlängerung der Regelstudienzeiten
-        Erleichterte Einschreibung in Master-Studiengänge
-
-        </p>
-        <br>
-        <h3>Verordnung zur Änderung der Berfufsordnung für Hebammen und Entbindungspfleger</h3>
-
-        Die Fortbildungspflicht für Hebammen und Entbindungspfleger ruht 2020
-        <br>
-        <br>
-
-        <h3>Corona-Regional-Verordnung</h3>
-
-        Die Coronaregionalverordnung gilt für die Einwohner eines Kreises oder einer kreisfreien Stadt, wenn mehr als 50
-        Neuinfektionen mit dem Coronavirus SARS-CoV-2 je 100.000 Einwohner innerhalb einer Woche auftreten. Die
-        Zusammenkünfte und Aktivitäten im öffentlichen Raum können dann noch stärker eingeschränkt werden, als es die
-        Coronaschutzverordnung bereits vorsieht.
-        <br>
-        <br>
-        <p class="px-4">
-        Begrenzung auf 2 Personen, die im öffentlichen Raum zusammentreffen, es sei denn es liegt ein gemeinsamer
-        Haushalt, Ehe, Lebenspartner- oder gefährtenschaft vor oder es handelt sich um Geschwister, Verwandte in gerader
-        Linie, minderjährige und unterstützungsbedürftige Personen oder notwendige Zusammenkünfte aus
-        betreuungsrelevanten Gründen zusätzlich zur Coronaschutzverordnung noch weitere Verbote, wie z.B. Kontaktsportarten im Freien, Grillen und
-        Picknicken.
-        </p>
-       
-        <br>
-        <h3>Corona-Fleischwirtschaft-Verordnung</h3>
-
-        Weitere Infektionsgeschehen in Großbetrieben der Fleischwirtschaft sollen durch die
-        Coronafleischwirtschaftverordnung vermieden werden.
-        Es gibt umfangreiche Ausnahmeregelungen. So gelten die Pflichten wenn höchstens 20 % der Belegschaft in
-        Gemeinschaftsunterkünften lebt, die Temperatur mindestens 10 Grad Celsius beträgt, 40-60 % Luftfeuchtigkeit
-        herrscht, die Produktionsbereiche zu mehr als 50% mit Frischluft belüftet werden und der Mindestabstand von 1,5
-        Metern eingehalten wird. Es wird in der Verordnung ferner explizit die Möglichkeit eingeräumt, weitere Ausnahmen
-        zuzulassen.
-        <br>
-        <br>
-        <p class="px-4">
-        Es dürfen nur symptomfreie Arbeiter eingesetzt werden
-        Es müssen 2x pro Woche Tests (PCR) durchgeführt werden / Poolverfahren gestattet
-        Testergebnisse müssen wöchentlich an das Landesinstitut für Arbeitsgestaltung des Landes NRW übermittelt werden
-        Aufklärung der Beschäftigten in ihrer Muttersprache über Pflicht zur Arbeitsniederlegung und Recht auf
-        Lohnfortzahlung bei Erkältungssymptomen, sowie über Hygienemaßnahmen und Verwendung / Tragedauer von
-        Mund-Nase-Bedeckungen
-        </p>
-      
-        <br>
-        <h3>Hochschul-Befristungsdauer-Verlängerungsverordnung</h3>
-        Die zulässige Befristungsdauer der Arbeitsverträge von Juniorprofessor:innen, akademischen Rät:innen und
-        akademischen Oberrät:innen verlängert sich um 6 Monate.
-        <br>  <br>
-        <h3>Quarantäneverordnung</h3>
-        Sie gilt für Personen, die einen positiven PCR-Test haben oder die sich wegen Erkältungssymptomen oder einem
-        positiven Schnelltest einem PCR-Test unterzogen haben und auf das Ergebnis warten. Sie gilt zudem für
-        Haushaltsanghörige und andere Kontaktpersonen der positiv getesteten Person.
-        <br>
-        <br>
-        <p class="px-4">
-        Sich zu Hause absondern (von Haushaltsangehörigen fernhalten)
-        bei nicht vermeidbarem Kontakt eine Maske tragen
-        keinen Besuch empfangen
-        Aufenthalt auf selbstgenutztem Balkon, Garten, Terrasse erlaubt
-        Befolgen des Hinweisblattes des Robert Koch-Instituts „Häusliche Isolierung bei bestätigter Covid 19-Infektion“
-        Haushaltsangehörige, die in den vergangenen 10 Tagen Kontakt zur unter Quarantäne stehenden Personen hatten,
-        begeben sich ebenfalls in Quarantäne.
-        10 Tage nach Testung des Primärfalles kann der Haushaltsangehörige sich freitesten
-        Über andere Kontaktpersonen entscheidet das Gesundheitsamt
-        Postiv Getestete sind verpflichtet, ihre Kontaktpersonen (länger als 15 Minuten, weniger als 1,5 m zu
-        informieren)<br>
-        Ausnahmen für Personal kritischer Infrastrukturen
-        </p>
-    </div>
-    <div class="px-5 mt-3">
-        <h1>Google Trends Analyse</h1>
-
-        <p class="text-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
-            <br>
-            <br>
-            <b>Hinweis: </b>Die Zahlen in Google Trends sind keine konkrete Anzahl von Suchanfragen. Die Zahlen stellen
-            das Suchinteresse relativ zum höchsten Punkt im Diagramm für die jeweilige Region (Deutschland) git und Zeit
-            dar. Ein Wert von
-            100 ist die höchste Popularität für den Begriff. Ein Wert von 50 bedeutet, dass der Begriff halb so populär
-            ist. Ein Wert von 0 bedeutet, dass es nicht genügend Daten für diesen Begriff gab.
-
-        </p>
-    </div>
-    <div div class="px-5" style="width:100vw">
-        <canvas id="test-line-chart"></canvas>
-    </div>
-    <!--
-    <div>
-        <canvas div class="px-5" id="test-term-chart" width="200em"></canvas>
-    </div>
-    -->
-    <div class="px-5 mt-3">
-        <h1>TL;DR</h1>
-
-        <p class="text-justify">
-            Team: Max, Nina, Valeria, Anne
-        </p>
-    </div>
+                    </p>
+                </div>
+                <div class="mt-3 bg-white shadow-sm p-3 mb-5 bg-body rounded" style="width:100%">
+                    <canvas class="mr-5" id="test-line-chart"></canvas>
+                </div>
 
 
 
-    <script>
+            </div>
+            <div class="mx-5 px-5 mt-8 bg-white shadow-sm p-3 bg-body rounded" >
+                <h1 class="display-1">TL;DR</h1>
 
-        window.onload = function () {
-            linechart_js.get_data();
-            tabelle_term.get_data();
-        };
-        /*
-        $(document).on("click", "#button", function (evt) {
-            tabelle_js.get_data();
-        });
+                <div class="mt-3">
+                    <p class="text-justify">
+                    <h3 class="display-4">Team</h3>
+                    <hr>
 
-        $(document).on("click", "#linechart_button", function (evt) {
-            linechart_js.get_data();
-        });
-        $(document).on("click", "#termchart_button", function (evt) {
-            tabelle_term.get_data();
-        });
-*/
-    </script>
+                    Max, Nina, Valeria, Anne
+                    </p>
+                </div>
+            </div>
+
+
+
+            <script>
+
+                window.onload = function () {
+                    linechart_js.get_data();
+                    tabelle_term.get_data();
+                };
+
+            </script>
 
 </body>
 
