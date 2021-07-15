@@ -51,9 +51,6 @@ app.get("/csv", function (req, res) {
             records.push(data);
 
             // console.log(JSON.stringify(keys, null, " "))
-
-
-
             that.resume();
         })
         .on("end", function () {
@@ -73,8 +70,6 @@ app.get("/csv", function (req, res) {
 });
 
 app.get("/google_data", function (req, res) {
-
-
     var filename = path.join(__dirname, "static");
     filename = path.join(filename, "data");
     filename = path.join(filename, "google_begriffe.json");
