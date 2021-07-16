@@ -62,12 +62,14 @@
             -wirklichkeit der Menschen in NRW und in anderen Bundesländern maßgeblich bestimmen.
             Im engeren Sinne beschäftigt sich dieses Projekt nur mit den Verordnungen im Wortsinne. Es existieren
             daneben auch Erlasse, Allgemeinverfügungen und Gesetze (z.B. auf Bundesebene das Infektionsschutzgesetz),
-            aufgrund des begrenzten Projektzeitraums wurden aber nur die [text link with title]
-            (https://de.wikipedia.org/wiki/Liste_der_infolge_der_COVID-19-Pandemie_erlassenen_deutschen_Gesetze_und_Verordnungen#Verordnungen_10
-            "Verordnungen auf Ebene des Landes NRW") berücksichtigt.
+            aufgrund des begrenzten Projektzeitraums wurden aber nur die <a
+                href="https://de.wikipedia.org/wiki/Liste_der_infolge_der_COVID-19-Pandemie_erlassenen_deutschen_Gesetze_und_Verordnungen#Verordnungen_10">Verordnungen
+                auf Ebene des Landes NRW</a>
+            berücksichtigt.
 
             <br><br>
-            Im Folgenden präsentieren wir Euch unsere Analyseergebnisse inform einer Häufigkeitsanalyse und Visualisierung von Google Trends.
+            Im Folgenden präsentieren wir Euch unsere Analyseergebnisse in Form einer Häufigkeitsanalyse und
+            Visualisierung von Google Trends.
             </p>
         </div>
     </div>
@@ -98,22 +100,30 @@
 
                 Um die sprachlichen Daten aus den Textdaten maschinell zu extrahieren, müssen zuvor aber einige
                 Vorverarbeitungsschritte durchgeführt werden:
-
-                * Die Texte verfügen, wenn sie aus den PDF-Dokumenten extrahiert werden, über Silbentrennung am
-                Zeilenende. Um zu verhindern, dass in den nächsten Schritten solche Silben in der darauffolgenden Zeile
-                wie Einzelwörter behandelt werden, müssen alle diese Wörter wieder zusammengeführt werden. In unserem
-                Fall haben wir das mit einem regulären Ausdruck gelöst.
-
-                * Bestimmte Begriffe, wie z.B. den Namen der Ministerin, die diese Verordnung herausgebracht hat, werden
-                spaced dargestellt ( M i n i s t e r i n ), dies wurde durch die reguläre Schreibweise (Ministerin)
-                ersetzt.
+                <br>
+                <br>
+                <ul>
+                    <li>Die Texte verfügen, wenn sie aus den PDF-Dokumenten extrahiert werden, über Silbentrennung am
+                        Zeilenende. Um zu verhindern, dass in den nächsten Schritten solche Silben in der
+                        darauffolgenden Zeile
+                        wie Einzelwörter behandelt werden, müssen alle diese Wörter wieder zusammengeführt werden. In
+                        unserem
+                        Fall haben wir das mit einem regulären Ausdruck gelöst.</li>
+                    <li>Bestimmte Begriffe, wie z.B. den Namen der Ministerin, die diese Verordnung herausgebracht hat,
+                        werden
+                        spaced dargestellt ( M i n i s t e r i n ), dies wurde durch die reguläre Schreibweise
+                        (Ministerin)
+                        ersetzt.</li>
+                </ul>
 
                 Anschließend werden die Texte mit einem Sprachverarbeitungsalgorithmus analyisiert. Hier wurde die
-                NLP-Bibliothek [text link with title] (https://spacy.io/usage/spacy-101#whats-spacy "spaCy") verwendet,
+                NLP-Bibliothek
+                <a href="https://spacy.io/usage/spacy-101#whats-spacy">spaCy</a> verwendet,
                 das auch über ein Python-Package verfügt, das innerhalb einer Python-Distribution funktioniert. SpaCy
                 ist Open Source und verfügt über ein vergleichsweise großes Sprachmodell (auch fürs Deutsche), sodass
                 auch deutschsprachige Texte angemessen untersucht werden können.
-                _Anmerkung_: NLTK hat ebenfalls die Funktionen, die man für das Auslesen der Verordnungen benötigt, ist
+                <i>Anmerkung</i>: NLTK hat ebenfalls die Funktionen, die man für das Auslesen der Verordnungen benötigt,
+                ist
                 aber primär auf englischsprachige Inhalte ausgelegt und funktioniert für andere Sprachen nicht so gut.
                 <br><br>
                 <h3> 1. Text einlesen </h3>
@@ -128,14 +138,19 @@
 
                 Da die spaCy-Programmlogik nicht direkt auf Inhalte eines Dateiobjektes zugreifen kann, wird in einem
                 Zwischenschritt Folgendes getan:
+                <br>
+                <ul>
+                    <li>Über die Datei des Verordnungstextes iterieren und deren Lemmata in einer Liste speichern</li>
+                    <li>Ein Dictionary anlegen. Dabei sind die Lemmata die Keys und die Häufigkeitswerte innerhalb des
+                        Dokumentes die Values.</li>
+                    <li>Eine zweite Liste anlegen, in der die Wörter mitsamt der zugehörigen POS-Tags gespeichert werden
+                        (hilfreich im weiteren Verlauf, um z.B. Satzzeichen herauszufiltern)</li>
+                </ul>
 
-                * Über die Datei des Verordnungstextes iterieren und deren Lemmata in einer Liste speichern
-                * Ein Dictionary anlegen. Dabei sind die Lemmata die Keys und die Häufigkeitswerte innerhalb des
-                Dokumentes die Values.
-                * Eine zweite Liste anlegen, in der die Wörter mitsamt der zugehörigen POS-Tags gespeichert werden
-                (hilfreich im weiteren Verlauf, um z.B. Satzzeichen herauszufiltern)
 
-                <br><br>
+
+
+                <br>
                 <h3> 3. Das Dictionary in ein Pandas-Dataframe überführen </h3>
 
                 Um aus diesem Dictionary ein mit pandas manipulierbares Dataframe-Objekt zu generieren, werden die
@@ -146,9 +161,13 @@
 
                 Um nur noch solche Lemmata im Dataframe zu behalten, die für die linguistische Analyse relevant sind,
                 werden nach und nach bestimmte Elemente „gedropped“.
+                <br><br>
+                <ul>
+                    <li>Satz-, Sonder- und Leerzeichen (also z.B. POS-Tags SPACE oder PUNCT oder Symbole wie ‚§‘)</li>
+                    <li>Stopp- und Funktionswörter (wie ‚und‘, ‚der‘, ‚obwohl‘, etc.)</li>
+                </ul>
 
-                * Satz-, Sonder- und Leerzeichen (also z.B. POS-Tags SPACE oder PUNCT oder Symbole wie ‚§‘)
-                * Stopp- und Funktionswörter (wie ‚und‘, ‚der‘, ‚obwohl‘, etc.)
+
 
                 Die Stoppwörter werden durch eine eingelesene externe Textdatei definiert. Es wird über das Dataframe
                 iteriert, wobei alle Wörter, die ebenfalls auf der Stoppwortliste stehen, entfernt werden.
@@ -162,7 +181,7 @@
                 Wort ‚Coronavirus‘ nur deswegen 3 Mal vorkommt, weil es in einer Überschrift auftaucht).
                 Um diese Häufigkeitswerte in der Visualisierung anzuzeigen, wird als Datei-Einlese-Format JSON
                 verwendet.
-                _Anmerkung_: Eine automatisierte JSON-Erstellung (z.B. indem eine Methode geschrieben wird, die
+                <i>Anmerkung:</i> Eine automatisierte JSON-Erstellung (z.B. indem eine Methode geschrieben wird, die
                 automatisch die drei Begriffe mit dem höchsten Häufigkeitswert in die JSON-Datei schreibt) ist bei den
                 meisten CSV-Dateien nicht zielführend, weil in einigen Fällen die häufigsten Begriffe trotzdem
                 „Pseudo-Stoppwörter“ sind, die zwar nicht auf der Liste stehen, aber keine echte Funktion haben
@@ -327,8 +346,10 @@
                         Verschiebung von Wahlen von Gremien der Hochschule und der Studierendenschaft
                         Gremiensitzungen und Beschlüsse in elektronischer Kommunikation ermöglichen
                         Online-Prüfungen
+                        <br><br>
 
                         <b>Online-Lehre</b>
+                        <br><br>
                         Befreiung von der Immatrikulationspflicht im letzten Prüfungssemester bei sozialer Notlage
                         Prüfungen, die erstmals abgelegt und nicht bestanden werden, gelten als nicht unternommen, es
                         sei denn,
@@ -339,7 +360,7 @@
 
                     </p>
                     <br>
-                    <h3>Verordnung zur Änderung der Berfufsordnung für Hebammen und Entbindungspfleger</h3>
+                    <h3>Verordnung zur Änderung der Berufsordnung für Hebammen und Entbindungspfleger</h3>
 
                     Die Fortbildungspflicht für Hebammen und Entbindungspfleger ruht 2020
                     <br>
@@ -399,7 +420,7 @@
                         Recht auf
                         Lohnfortzahlung bei Erkältungssymptomen, sowie über Hygienemaßnahmen und Verwendung / Tragedauer
                         von
-                        Mund-Nase-Bedeckungen
+                        Mund-Nase-Bedeckungen. In diesem Sinne: guten Appetit.
                     </p>
 
                     <br>
@@ -447,57 +468,90 @@
                 <div class="mt-3">
 
                     <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut
-                        labore et
-                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                        rebum.
-                        Stet
-                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-                        sit
-                        amet,
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam
-                        erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                        gubergren,
-                        no
-                        sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Google Trends ist eine Website von Google, die die Popularität der Top-Suchanfragen in der
+                        Google-Suche über verschiedene Regionen und Sprachen hinweg analysiert. Die Website verwendet
+                        Diagramme, um das Suchvolumen verschiedener Abfragen im Laufe der Zeit zu vergleichen.
+
+                        In unserem Projekt haben wir alle Begriffe, die häufig in den Verordnungen vorkommen, genommen
+                        und geschaut, wie beliebt sie in der Google-Suche waren.
                         <br>
-                        <br>
-                        <b>Hinweis: </b>Die Zahlen in Google Trends sind keine konkrete Anzahl von Suchanfragen. Die
-                        Zahlen
-                        stellen
-                        das Suchinteresse relativ zum höchsten Punkt im Diagramm für die jeweilige Region (Deutschland)
-                        git und
-                        Zeit
-                        dar. Ein Wert von
-                        100 ist die höchste Popularität für den Begriff. Ein Wert von 50 bedeutet, dass der Begriff halb
-                        so
-                        populär
-                        ist. Ein Wert von 0 bedeutet, dass es nicht genügend Daten für diesen Begriff gab.
+                    <h2 class="display-6">Technische Erklärung </h2>
+                    <hr>
+                    Zu Beginn wurde jeder Begriff auf der <a href="https://trends.google.com/">Website</a> mit einigen
+                    Filtern
+                    gefunden: es wurde in dem Zeitfenster 01.03.2020-01.03.2021 und nur innerhalb von NRW gesucht.
+                    Dann wurde für jeden Begriff eine CSV-Datei heruntergeladen, die Informationen darüber enthielt,
+                    wie oft nach diesem Begriff gesucht wurde. Danach wurden alle CSV-Dateien zusammengeführt und
+                    zur einfacheren Verwendung im weiteren Code in eine JSON-Datei konvertiert.
+                    <br>
+                    <br>
+                    <b>Hinweis: </b>Die Zahlen in Google Trends sind keine konkrete Anzahl von Suchanfragen. Die
+                    Zahlen
+                    stellen
+                    das Suchinteresse relativ zum höchsten Punkt im Diagramm für die jeweilige Region (Deutschland)
+                    git und
+                    Zeit
+                    dar. Ein Wert von
+                    100 ist die höchste Popularität für den Begriff. Ein Wert von 50 bedeutet, dass der Begriff halb
+                    so
+                    populär
+                    ist. Ein Wert von 0 bedeutet, dass es nicht genügend Daten für diesen Begriff gab.
 
                     </p>
                 </div>
                 <div class="mt-3 bg-white shadow-sm p-3 mb-5 bg-body rounded" style="width:100%">
                     <canvas class="mr-5" id="test-line-chart"></canvas>
                 </div>
-
-
-
             </div>
-            <div class="mx-5 px-5 mt-8 bg-white shadow-sm p-3 bg-body rounded" >
-                <h1 class="display-1">TL;DR</h1>
 
-                <div class="mt-3">
-                    <p class="text-justify">
-                    <h3 class="display-4">Team</h3>
-                    <hr>
 
-                    Max, Nina, Valeria, Anne
-                    </p>
-                </div>
+        </div>
+        <div class="mx-5 px-5 mt-8 bg-white shadow-sm p-3 bg-body rounded">
+            <h1 class="display-1">TL;DR</h1>
+
+            <div class="mt-3">
+
+
+                <h2 class="display-6">Vorläufiges Fazit </h2>
+
+                <hr>
+                <p class="text-justify">
+                    Es zeigt sich kein deutlich sichtbarer Zusammenhang zwischen den häufigsten Begriffen in den
+                    NRW-Verordnungen und den Anfragen in Google Trends.
+                    <br><br>
+                    Als Ausblick für die weitere Analyse ist es denkbar, nicht die häufigsten Begriffe als Basis zu
+                    verwenden, sondern die ‚schmerzhaftesten‘ (Trigger).
+                    <br><br>
+                    Dies sind nicht zwingend die häufigsten Begriffe, sondern wahrscheinlich diejenigen, die in der
+                    Öffentlichkeit am meisten diskutiert wurden (Medienecho). Da die Verordnungen juristische Texte
+                    sind, die effizient formuliert werden, tauchen Trigger (z.B. Besuchsverbot) oft nur ein einziges Mal
+                    auf. Es ist jedoch möglich, dass bezogen auf diese Begriffe die Bevölkerung bei Google Trends
+                    besonders aktiv wurde.
+
+
+
+
+                <h2 class="display-6">Team </h2>
+                <hr>
+                <ul>
+
+                    <li>
+                        Maximilian Supplieth: Häufigkeitsanalyse, Korpuserstellung
+                    </li>
+                    <li>
+                        Nina Eckertz: Visualisierung, Frontend
+                    </li>
+                    <li>
+                        Valeria Kozenasheva: Google Trends Analyse, Frontend
+                    </li>
+                    <li>
+                        Anne Reiner: Korpuserstellung, Content
+                    </li>
+                </ul>
+
+                </p>
             </div>
+
 
 
 

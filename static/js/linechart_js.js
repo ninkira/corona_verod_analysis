@@ -116,8 +116,8 @@
 
             label: "Personen",
             data: [],
-            borderColor: "rgba(200, 231, 255,  0.7)",
-            backgroundColor: "rgba(200, 231, 255,  0.7)",
+            borderColor: "rgba(117, 201, 200,  0.7)",
+            backgroundColor: "rgba(117, 201, 200,  0.7)",
             fill: false,
             hidden: true
         }
@@ -125,8 +125,8 @@
 
             label: "Sektor",
             data: [],
-            borderColor: "rgba(54, 162, 235, 0.4)",
-            backgroundColor: "rgba(54, 162, 235, 0.4)",
+            borderColor: "rgba(126, 120, 210, 0.4)",
+            backgroundColor: "rgba(126, 120, 210, 0.4)",
             fill: false,
             hidden: true
         }
@@ -134,8 +134,8 @@
 
             label: "Vermeidung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(48, 1, 30, 0.3)",
+            backgroundColor: "rgba(48, 1, 30, 0.3)",
             fill: false,
             hidden: true
         }
@@ -144,18 +144,18 @@
 
             label: "Aufenthaltsort",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(27, 48, 34, 0.3)",
+            backgroundColor: "rgba(27, 48, 34, 0.3)",
             fill: false,
             hidden: true
         }
 
         datasets[11] = {
-
+ 
             label: "Behinderung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(222, 217, 226, 0.3)",
+            backgroundColor: "rgba(222, 217, 226, 0.3)",
             fill: false,
             hidden: true
         }
@@ -163,8 +163,8 @@
 
             label: "des Infektionsschutzgesetzes",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(0, 50, 73, 0.3)",
+            backgroundColor: "rgba(0, 50, 73, 0.3)",
             fill: false,
             hidden: true
         }
@@ -172,8 +172,8 @@
 
             label: "Menschen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(126, 120, 210, 0.3)",
+            backgroundColor: "rgba(126, 120, 210, 0.3)",
             fill: false,
             hidden: true
         }
@@ -181,8 +181,8 @@
 
             label: "Quarantäne",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(50, 232, 117, 0.3)",
+            backgroundColor: "rgba(50, 232, 117, 0.3)",
             fill: false,
             hidden: true
         }
@@ -190,8 +190,8 @@
 
             label: "Wohnformen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(86, 238, 244, 0.3)",
+            backgroundColor: "rgba(86, 238, 244, 0.3)",
             fill: false,
             hidden: true
         }
@@ -199,8 +199,8 @@
 
             label: "Feuerwehrtechnischen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(178, 76, 99, 0.3)",
+            backgroundColor: "rgba(178, 76, 99, 0.3)",
             fill: false,
             hidden: true
         }
@@ -208,8 +208,8 @@
 
             label: "Dienstes:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(126, 120, 210, 0.3)",
+            backgroundColor: "rgba(126, 120, 210, 0.3)",
             fill: false,
             hidden: true
         }
@@ -217,8 +217,8 @@
 
             label: "Laufbahngruppe:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(102, 161, 130, 0.3)",
+            backgroundColor: "rgba(102, 161, 130, 0.3)",
             fill: false,
             hidden: true
         }
@@ -226,8 +226,8 @@
 
             label: "Hochschule:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(126, 120, 210, 0.3)",
+            backgroundColor: "rgba(126, 120, 210, 0.3)",
             fill: false,
             hidden: true
         }
@@ -236,8 +236,8 @@
 
             label: "Rektorat",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(29, 45, 68, 0.3)",
+            backgroundColor: "rgba(29, 45, 68, 0.3)",
             fill: false,
             hidden: true
         }
@@ -245,8 +245,8 @@
 
             label: "Hochschulgesetz:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(13, 19, 33, 0.3)",
+            backgroundColor: "rgba(13, 19, 33, 0.3)",
             fill: false,
             hidden: true
         }
@@ -254,8 +254,8 @@
 
             label: "geändert:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(189, 237, 224, 0.7)",
+            backgroundColor: "rgba(189, 237, 224, 0.7)",
             fill: false,
             hidden: true
         }
@@ -263,8 +263,8 @@
 
             label: "Verordnung:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(187, 219, 209, 0.7)",
+            backgroundColor: "rgba(187, 219, 209, 0.7)",
             fill: false,
             hidden: true
         }
@@ -272,8 +272,8 @@
 
             label: "Angabe:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(182, 184, 214, 0.3)",
+            backgroundColor: "rgba(182, 184, 214, 0.3)",
             fill: false,
             hidden: true
         }
@@ -283,8 +283,8 @@
 
             label: "Wort",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(126, 120, 210, 0.3)",
+            backgroundColor: "rgba(126, 120, 210, 0.3)",
             fill: false,
             hidden: true
         }
@@ -292,8 +292,8 @@
 
             label: "Aufnahme:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(111, 88, 201, 0.3)",
+            backgroundColor: "rgba(111, 88, 201, 0.3)",
             fill: false,
             hidden: true
         }
@@ -301,8 +301,8 @@
 
             label: "Mindestabstand:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(65, 123, 90, 0.3)",
+            backgroundColor: "rgba(65, 123, 90, 0.3)",
             fill: false,
             hidden: true
         }
@@ -310,8 +310,8 @@
 
             label: "Vorkehrungen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(75, 63, 114, 0.3)",
+            backgroundColor: "rgba(75, 63, 114, 0.3)",
             fill: false,
             hidden: true
         }
@@ -319,8 +319,8 @@
 
             label: "Schule:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(31, 32, 65, 0.3)",
+            backgroundColor: "rgba(31, 32, 65, 0.3)",
             fill: false,
             hidden: true
         }
@@ -329,8 +329,8 @@
 
             label: "Entscheidung:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(36, 16, 35, 0.3)",
+            backgroundColor: "rgba(36, 16, 35, 0.3)",
             fill: false,
             hidden: true
         }
@@ -338,8 +338,8 @@
 
             label: "Person:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(107, 5, 4, 0.3)",
+            backgroundColor: "rgba(107, 5, 4, 0.3)",
             fill: false,
             hidden: true
         }
@@ -347,8 +347,8 @@
 
             label: "Besuche:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(163, 50, 11, 0.3)",
+            backgroundColor: "rgba(163, 50, 11, 0.3)",
             fill: false,
             hidden: true
         }
@@ -356,8 +356,8 @@
 
             label: "Gewährleistung:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(213, 230, 141, 0.3)",
+            backgroundColor: "rgba(213, 230, 141, 0.3)",
             fill: false,
             hidden: true
         }
@@ -376,8 +376,8 @@
 
             label: "Mindeststandards:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(71, 160, 37, 0.3)",
+            backgroundColor: "rgba(71, 160, 37, 0.3)",
             fill: false,
             hidden: true
         }
@@ -385,8 +385,8 @@
 
             label: "1.5 Meter:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(174, 255, 216, 0.3)",
+            backgroundColor: "rgba(174, 255, 216, 0.3)",
             fill: false,
             hidden: true
         }
@@ -394,8 +394,8 @@
 
             label: "angefügt:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(138, 255, 193, 0.3)",
+            backgroundColor: "rgba(138, 255, 193, 0.3)",
             fill: false,
             hidden: true
         }
@@ -403,8 +403,8 @@
 
             label: "Anforderungen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(143, 220, 151, 0.3)",
+            backgroundColor: "rgba(143, 220, 151, 0.3)",
             fill: false,
             hidden: true
         }
@@ -412,8 +412,8 @@
 
             label: "Staatengruppe:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(172, 136, 135, 0.3)",
+            backgroundColor: "rgba(172, 136, 135, 0.3)",
             fill: false,
             hidden: true
         }
@@ -423,8 +423,8 @@
 
             label: "Einreise:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(159, 74, 84, 0.3)",
+            backgroundColor: "rgba(159, 74, 84, 0.3)",
             fill: false,
             hidden: true
         }
@@ -432,8 +432,8 @@
 
             label: "Staat:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(119, 47, 26, 0.3)",
+            backgroundColor: "rgba(119, 47, 26, 0.3)",
             fill: false,
             hidden: true
         }
@@ -441,8 +441,8 @@
 
             label: "entgegen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(242, 166, 90, 0.3)",
+            backgroundColor: "rgba(242, 166, 90, 0.3)",
             fill: false,
             hidden: true
         }
@@ -450,8 +450,8 @@
 
             label: "betreibt:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(245, 133, 73, 0.3)",
+            backgroundColor: "rgba(245, 133, 73, 0.3)",
             fill: false,
             hidden: true
         }
@@ -459,8 +459,8 @@
 
             label: "Regelungen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(238, 193, 112, 0.3)",
+            backgroundColor: "rgba(238, 193, 112, 0.3)",
             fill: false,
             hidden: true
         }
@@ -470,8 +470,8 @@
 
             label: "Gruppen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(196, 166, 157, 0.3)",
+            backgroundColor: "rgba(196, 166, 157, 0.3)",
             fill: false,
             hidden: true
         }
@@ -479,8 +479,8 @@
 
             label: "Coronaschutzverordnung:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(196, 166, 157, 0.3)",
+            backgroundColor: "rgba(196, 166, 157, 0.3)",
             fill: false,
             hidden: true
         }
@@ -488,8 +488,8 @@
 
             label: "NRW:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(98, 59, 90, 0.3)",
+            backgroundColor: "rgba(98, 59, 90, 0.3)",
             fill: false,
             hidden: true
         }
@@ -497,8 +497,8 @@
 
             label: "Berufsordnung:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(137, 96, 142, 0.3)",
+            backgroundColor: "rgba(137, 96, 142, 0.3)",
             fill: false,
             hidden: true
         }
@@ -506,8 +506,8 @@
 
             label: "Hebammen:",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(186, 149, 147, 0.3)",
+            backgroundColor: "rgba(186, 149, 147, 0.3)",
             fill: false,
             hidden: true
         }
@@ -515,8 +515,8 @@
 
             label: "Entbindungspfleger",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(237, 255, 171, 0.7)",
+            backgroundColor: "rgba(237, 255, 171, 0.7)",
             fill: false,
             hidden: true
         }
@@ -524,8 +524,8 @@
 
             label: "Nutzung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(200, 255, 190, 0.7)",
+            backgroundColor: "rgba(200, 255, 190, 0.7)",
             fill: false,
             hidden: true
         }
@@ -533,8 +533,8 @@
 
             label: "Kinder",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(111, 237, 183, 0.3)",
+            backgroundColor: "rgba(111, 237, 183, 0.3)",
             fill: false,
             hidden: true
         }
@@ -542,8 +542,8 @@
 
             label: "Stunden",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(45, 216, 129, 0.3)",
+            backgroundColor: "rgba(45, 216, 129, 0.3)",
             fill: false,
             hidden: true
         }
@@ -551,8 +551,8 @@
 
             label: "Gesundheitsamt",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(78, 166, 153, 0.3)",
+            backgroundColor: "rgba(78, 166, 153, 0.3)",
             fill: false,
             hidden: true
         }
@@ -562,8 +562,8 @@
 
             label: "öffentlichen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(20, 13, 79, 0.3)",
+            backgroundColor: "rgba(20, 13, 79, 0.3)",
             fill: false,
             hidden: true
         }
@@ -571,8 +571,8 @@
 
             label: "Betrieb",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(28, 11, 25, 0.3)",
+            backgroundColor: "rgba(28, 11, 25, 0.3)",
             fill: false,
             hidden: true
         }
@@ -580,8 +580,8 @@
 
             label: "öffnet",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(115, 111, 114, 0.3)",
+            backgroundColor: "rgba(115, 111, 114, 0.3)",
             fill: false,
             hidden: true
         }
@@ -589,8 +589,8 @@
 
             label: "durchführt",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(178, 178, 178, 0.3)",
+            backgroundColor: "rgba(178, 178, 178, 0.3)",
             fill: false,
             hidden: true
         }
@@ -598,8 +598,8 @@
 
             label: "Zeugnis",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(195, 186, 186, 0.3)",
+            backgroundColor: "rgba(195, 186, 186, 0.3)",
             fill: false,
             hidden: true
         }
@@ -610,8 +610,8 @@
 
             label: "Robert Koch-Institut",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(154, 143, 151, 0.3)",
+            backgroundColor: "rgba(154, 143, 151, 0.3)",
             fill: false,
             hidden: true
         }
@@ -619,8 +619,8 @@
 
             label: "Rückverfolgbarkeit",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(130, 221, 240, 0.3)",
+            backgroundColor: "rgba(130, 221, 240, 0.3)",
             fill: false,
             hidden: true
         }
@@ -628,8 +628,8 @@
 
             label: "Coronaeinreiseverordnung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(82, 150, 165, 0.3)",
+            backgroundColor: "rgba(82, 150, 165, 0.3)",
             fill: false,
             hidden: true
         }
@@ -637,8 +637,8 @@
 
             label: "unverzüglich",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(246, 194, 139, 0.3)",
+            backgroundColor: "rgba(246, 194, 139, 0.3)",
             fill: false,
             hidden: true
         }
@@ -646,8 +646,8 @@
 
             label: "Kindertageseinrichtungen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(252, 215, 173, 0.7)",
+            backgroundColor: "rgba(252, 215, 173, 0.7)",
             fill: false,
             hidden: true
         }
@@ -657,8 +657,8 @@
 
             label: "Beschäftigte",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(165, 117, 72, 0.3)",
+            backgroundColor: "rgba(165, 117, 72, 0.3)",
             fill: false,
             hidden: true
         }
@@ -666,8 +666,8 @@
 
             label: "zuständigen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(243, 117, 43, 0.3)",
+            backgroundColor: "rgba(243, 117, 43, 0.3)",
             fill: false,
             hidden: true
         }
@@ -675,8 +675,8 @@
 
             label: "Verpflichtungen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(247, 157, 92, 0.3)",
+            backgroundColor: "rgba(247, 157, 92, 0.3)",
             fill: false,
             hidden: true
         }
@@ -684,8 +684,8 @@
 
             label: "Infektionsgeschehen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(245, 47, 87, 0.3)",
+            backgroundColor: "rgba(245, 47, 87, 0.3)",
             fill: false,
             hidden: true
         }
@@ -693,8 +693,8 @@
 
             label: "Coronavirus",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(162, 0, 33, 0.3)",
+            backgroundColor: "rgba(162, 0, 33, 0.3)",
             fill: false,
             hidden: true
         }
@@ -703,8 +703,8 @@
 
             label: "SARS-CoV-2",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(53, 40, 29, 0.3)",
+            backgroundColor: "rgba(53, 40, 29, 0.3)",
             fill: false,
             hidden: true
         }
@@ -712,8 +712,8 @@
 
             label: "Großbetrieb",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(52, 229, 255, 0.3)",
+            backgroundColor: "rgba(52, 229, 255, 0.3)",
             fill: false,
             hidden: true
         }
@@ -721,8 +721,8 @@
 
             label: "Fleischwirtschaft",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(49, 133, 252, 0.3)",
+            backgroundColor: "rgba(49, 133, 252, 0.3)",
             fill: false,
             hidden: true
         }
@@ -730,8 +730,8 @@
 
             label: "Risikogebiet",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(173, 189, 255, 0.3)",
+            backgroundColor: "rgba(173, 189, 255, 0.3)",
             fill: false,
             hidden: true
         }
@@ -739,8 +739,8 @@
 
             label: "Teilnehmern",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(183, 79, 111, 0.3)",
+            backgroundColor: "rgba(183, 79, 111, 0.3)",
             fill: false,
             hidden: true
         }
@@ -750,8 +750,8 @@
 
             label: "7-Tages-Inzidenz",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(216, 130, 157, 0.3)",
+            backgroundColor: "rgba(216, 130, 157, 0.3)",
             fill: false,
             hidden: true
         }
@@ -759,8 +759,8 @@
 
             label: "Fest",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(237, 216, 61, 0.3)",
+            backgroundColor: "rgba(237, 216, 61, 0.3)",
             fill: false,
             hidden: true
         }
@@ -768,8 +768,8 @@
 
             label: "Schutzmaßnahmen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(98, 139, 72, 0.3)",
+            backgroundColor: "rgba(98, 139, 72, 0.3)",
             fill: false,
             hidden: true
         }
@@ -777,8 +777,8 @@
 
             label: "Veranstaltungen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(5, 178, 220, 0.3)",
+            backgroundColor: "rgba(5, 178, 220, 0.3)",
             fill: false,
             hidden: true
         }
@@ -786,8 +786,8 @@
 
             label: "Versammlungen",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(0, 67, 133, 0.3)",
+            backgroundColor: "rgba(0, 67, 133, 0.3)",
             fill: false,
             hidden: true
         }
@@ -798,8 +798,8 @@
 
             label: "Mund-Nase-Bedeckung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(8, 124, 167, 0.3)",
+            backgroundColor: "rgba(8, 124, 167, 0.3)",
             fill: false,
             hidden: true
         }
@@ -807,8 +807,8 @@
 
             label: "Mitglied",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(3, 56, 96, 0.3)",
+            backgroundColor: "rgba(3, 56, 96, 0.3)",
             fill: false,
             hidden: true
         }
@@ -816,8 +816,8 @@
 
             label: "Gremium",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(6, 26, 107, 0.3)",
+            backgroundColor: "rgba(6, 26, 107, 0.3)",
             fill: false,
             hidden: true
         }
@@ -825,8 +825,8 @@
 
             label: "zulässig",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(238, 108, 77, 0.3)",
+            backgroundColor: "rgba(238, 108, 77, 0.3)",
             fill: false,
             hidden: true
         }
@@ -834,8 +834,8 @@
 
             label: "Getränken",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(243, 141, 104, 0.3)",
+            backgroundColor: "rgba(243, 141, 104, 0.3)",
             fill: false,
             hidden: true
         }
@@ -845,8 +845,8 @@
 
             label: "23 Uhr",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(51, 49, 46, 0.3)",
+            backgroundColor: "rgba(51, 49, 46, 0.3)",
             fill: false,
             hidden: true
         }
@@ -854,8 +854,8 @@
 
             label: "6 Uhr",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(23, 163, 152, 0.3)",
+            backgroundColor: "rgba(23, 163, 152, 0.3)",
             fill: false,
             hidden: true
         }
@@ -999,8 +999,8 @@
 
             label: "Coronaregionalverordnung",
             data: [],
-            borderColor: "rgb(153, 102, 255, 0.3)",
-            backgroundColor: "rgba(153, 102, 255, 0.3)",
+            borderColor: "rgb(37, 19, 81, 0.3)",
+            backgroundColor: "rgba(37, 19, 81, 0.3)",
             fill: false,
             hidden: true
         }

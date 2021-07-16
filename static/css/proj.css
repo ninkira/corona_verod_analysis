@@ -30,7 +30,7 @@ body {
   flex-direction: row;
   display: flex;
   justify-content: flex-end; 
-  align-items: center;
+  float:right;
   padding-top: 7px;
   padding-bottom: 2px;
   margin-left: 30%;
